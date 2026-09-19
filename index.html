@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>No. 3 🎨龍騰 B1 L3 Do Animals Sleep like You and Me? 連貫式翻譯課文總複習互動學習網</title>
+<style>
+:root{
+  --cream:#FFFDF9; --blue:#E2F1FF; --purple:#F3E8FF; --pink:#FCE7F3; --yellow:#FFFBEB;
+  --mint:#ECFDF5; --sky:#BAE6FD; --gold:#FEF08A;
+  --ink:#4A3E3D; --ink2:#6B5A59; --good:#15803D; --goodbg:#DCFCE7; --bad:#BE185D; --badbg:#FCE7F3;
+  --line:#E7DFC9; --card:#FFFFFF;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--cream); color:var(--ink);
+  font-family:"Microsoft JhengHei","微軟正黑體","Heiti TC","Segoe UI",system-ui,-apple-system,"PingFang TC",sans-serif;
+  font-size:clamp(14px,1.7vw,17px); line-height:1.75; -webkit-overflow-scrolling:touch;
+}
+#topbar{
+  position:sticky; top:0; z-index:70;
+  background:linear-gradient(100deg,var(--blue),var(--mint) 34%,var(--purple) 62%,var(--pink) 82%,var(--gold));
+  border-bottom:2px solid #fff; box-shadow:0 2px 10px rgba(74,62,61,.10);
+  padding:6px 10px; display:flex; align-items:center; gap:8px;
+}
+#menuBtn{
+  border:2px solid #fff; background:#ffffffcc; color:var(--ink); font-family:inherit; font-weight:900;
+  border-radius:999px; padding:5px 12px; cursor:pointer; font-size:clamp(12px,1.6vw,15px); flex:0 0 auto;
+  transition:.16s;
+}
+#menuBtn:hover{transform:translateY(-2px)}
+#menuBtn:active{transform:translateY(1px)}
+#topbar h1{
+  margin:0; flex:1; font-size:clamp(12.5px,2.2vw,19px); font-weight:800; letter-spacing:.2px;
+  color:var(--ink); text-shadow:0 1px 0 #fff; line-height:1.3;
+}
+#menuPanel{
+  position:fixed; left:8px; right:8px; z-index:69; display:none;
+  background:#fffdf9f2; backdrop-filter:blur(8px);
+  border:2px solid #C4B5FD; border-radius:18px; padding:10px;
+  box-shadow:0 12px 30px rgba(74,62,61,.22); max-height:72vh; overflow-y:auto;
+}
+#menuPanel.on{display:block; animation:drop .22s ease}
+@keyframes drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.tabbtn{
+  display:block; width:100%; text-align:left; border:2px solid var(--line); background:#fff; color:var(--ink2);
+  border-radius:14px; padding:9px 13px; cursor:pointer; font-weight:800; margin:5px 0;
+  font-size:clamp(13px,1.7vw,16px); font-family:inherit; transition:.16s;
+}
+.tabbtn:hover{transform:translateY(-2px)}
+.tabbtn:active{transform:translateY(1px)}
+.tabbtn.on{background:linear-gradient(120deg,var(--purple),var(--pink));border-color:#C4B5FD;color:var(--ink)}
+main{max-width:1000px;margin:0 auto;padding:14px 14px 220px}
+.panel{display:none;animation:fade .28s ease}
+.panel.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.rulebar{
+  background:linear-gradient(120deg,var(--gold),var(--pink));
+  border:2px solid #FDE68A; border-radius:16px; padding:9px 13px; margin:10px 0 14px;
+  font-weight:800; font-size:clamp(12px,1.6vw,15px); line-height:1.9;
+}
+.sec-title{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  font-size:clamp(16px,2.3vw,22px); font-weight:900; margin:22px 0 8px; color:var(--ink);
+  border-left:9px solid #7DD3FC; padding-left:10px;
+}
+.sub-title{font-size:clamp(15px,2vw,19px);font-weight:900;margin:18px 0 6px;color:var(--ink2)}
+.intro{background:var(--blue);border:2px solid #BFDBFE;border-radius:14px;padding:10px 13px;margin:8px 0 14px;font-size:clamp(13px,1.7vw,16px)}
+.card{
+  position:relative; background:var(--card); border:2px solid var(--line);
+  border-radius:18px; padding:16px 14px 14px; margin:16px 0 0; box-shadow:0 3px 0 rgba(74,62,61,.06);
+}
+.card.blue{background:linear-gradient(180deg,#fff,#F0F9FF)}
+.card.lockcard{opacity:.45;filter:grayscale(1);pointer-events:none}
+.num{
+  position:absolute; top:-13px; left:12px; min-width:30px; height:26px; padding:0 9px;
+  border-radius:999px; background:linear-gradient(120deg,var(--purple),var(--sky));
+  border:2px solid #fff; box-shadow:0 2px 6px rgba(74,62,61,.16);
+  display:flex;align-items:center;justify-content:center; font-weight:900; font-size:14px; color:var(--ink);
+}
+.qen{font-size:clamp(14px,1.85vw,17.5px);line-height:2.15;word-break:break-word}
+.zh{margin-top:8px;color:var(--ink2);font-size:clamp(12.5px,1.6vw,15px);background:var(--gold);border-radius:10px;padding:6px 10px;display:inline-block}
+.blank{
+  display:inline-block; min-width:96px; border:none; border-bottom:2.5px dashed #7DD3FC;
+  background:var(--yellow); font-family:inherit; font-size:inherit; color:var(--ink);
+  text-align:center; padding:1px 6px; margin:0 3px; border-radius:6px 6px 0 0; outline:none;
+}
+.blank:focus{background:var(--sky);border-bottom-color:#0EA5E9}
+.blank.ok{background:var(--goodbg);border-bottom-color:var(--good);color:var(--good);font-weight:800}
+.blank.no{background:var(--badbg);border-bottom-color:var(--bad);color:var(--bad);font-weight:800}
+.blank.w1{min-width:74px}.blank.w2{min-width:160px}.blank.w3{min-width:220px}
+.btn{
+  border:2px solid var(--line); background:#fff; color:var(--ink); font-family:inherit;
+  font-weight:800; border-radius:999px; padding:7px 15px; cursor:pointer; margin:10px 6px 0 0;
+  font-size:clamp(12.5px,1.6vw,15px); transition:.16s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 3px 0 rgba(74,62,61,.08)}
+.btn:active{transform:translateY(1px)}
+.btn.chk{background:linear-gradient(120deg,#BBF7D0,#DCFCE7);border-color:#86EFAC}
+.btn.ref{background:linear-gradient(120deg,var(--gold),#FDE68A);border-color:#FCD34D}
+.btn.ai{background:linear-gradient(120deg,var(--purple),var(--sky));border-color:#C4B5FD}
+.btn.say{background:linear-gradient(120deg,var(--pink),#FBCFE8);border-color:#F9A8D4;padding:6px 11px}
+.btn.mini{padding:4px 10px;font-size:13px;margin-top:6px}
+.btn.on{background:linear-gradient(120deg,var(--mint),#A7F3D0);border-color:#34D399}
+.reveal{display:none;margin-top:10px;background:#FFFDF3;border:2px dashed #FCD34D;border-radius:14px;padding:11px 13px;font-size:clamp(12.5px,1.65vw,15.5px)}
+.reveal.on{display:block;animation:fade .25s}
+.ansline{background:var(--goodbg);border-radius:10px;padding:6px 10px;margin:6px 0;font-weight:700;color:#14532D}
+.expl{margin-top:6px;color:var(--ink2);line-height:1.95}
+.fb{display:none;margin-top:10px;border-radius:14px;padding:10px 12px;font-weight:800}
+.fb.on{display:block}
+.fb.ok{background:var(--goodbg);border:2px solid #86EFAC;color:#14532D}
+.fb.no{background:var(--badbg);border:2px solid #F9A8D4;color:var(--bad)}
+textarea.ta{
+  width:100%; min-height:78px; border:2px solid var(--line); border-radius:14px; padding:10px;
+  font-family:inherit; font-size:clamp(13px,1.7vw,16px); background:#FFFDF3; color:var(--ink); resize:vertical; outline:none;
+}
+textarea.ta:focus{border-color:#7DD3FC;background:#fff}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.slot{
+  min-width:64px;min-height:40px;border:2.5px dashed #7DD3FC;border-radius:12px;background:var(--yellow);
+  display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 9px;cursor:pointer;font-weight:900;
+}
+.slot .slotlab{font-size:12px;color:var(--ink2)}
+.slot.filled{border-style:solid;background:var(--sky)}
+.pool{display:flex;flex-direction:column;gap:8px;margin:8px 0}
+.chip{
+  border:2px solid var(--line); background:#fff; border-radius:12px; padding:7px 11px; cursor:pointer;
+  font-weight:700; font-size:clamp(12.5px,1.65vw,15.5px); text-align:left; transition:.15s; line-height:1.7;
+  font-family:inherit; color:var(--ink);
+}
+.chip:hover{background:var(--blue);transform:translateY(-2px)}
+.chip.used{display:none}
+.wchip{display:inline-flex;align-items:center;gap:4px;border:2px solid var(--line);background:#fff;border-radius:12px;padding:4px 8px;transition:.15s}
+.wchip .wlab{border:none;background:none;font-family:inherit;font-weight:700;color:var(--ink);cursor:pointer;font-size:clamp(12.5px,1.65vw,15.5px);padding:2px 4px}
+.wchip .wspk{border:none;background:none;cursor:pointer;font-size:14px;opacity:.75;padding:0 2px}
+.wchip .wspk:hover{opacity:1}
+.wchip:hover{transform:translateY(-2px);background:var(--blue)}
+.wchip.sel{background:var(--pink);border-color:#F9A8D4}
+.wchip.taken{background:#F5F3EF;border-style:dashed;opacity:.85;transform:none}
+.wchip.taken .wlab{display:none}
+.chip.sel{background:var(--pink);border-color:#F9A8D4}
+.slot .chip{margin:0}
+.mc{display:flex;flex-direction:column;gap:7px;margin:9px 0}
+.mcopt{
+  border:2px solid var(--line);background:#fff;border-radius:13px;padding:8px 12px;cursor:pointer;
+  font-family:inherit;font-size:clamp(13px,1.7vw,16px);text-align:left;font-weight:700;transition:.15s;color:var(--ink);
+}
+.mcopt:hover{background:var(--blue);transform:translateY(-2px)}
+.mcopt.sel{background:var(--sky);border-color:#7DD3FC}
+.mcopt.ok{background:var(--goodbg);border-color:#86EFAC;color:#14532D}
+.mcopt.no{background:var(--badbg);border-color:#F9A8D4;color:var(--bad)}
+.para.lock{opacity:.42;filter:grayscale(1);pointer-events:none}
+.lockhint{display:none;font-weight:900;color:var(--ink2);background:var(--gold);border-radius:10px;padding:5px 10px;margin-top:6px}
+.para.lock .lockhint{display:inline-block}
+.flipwrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:12px}
+.flip{perspective:1200px;min-height:200px}
+.flipin{position:relative;width:100%;height:100%;min-height:200px;transition:transform .6s cubic-bezier(.4,.15,.2,1);transform-style:preserve-3d}
+.flip.on .flipin{transform:rotateY(180deg)}
+.face{
+  position:absolute;inset:0;backface-visibility:hidden;border:2px solid var(--line);border-radius:18px;
+  padding:13px;display:flex;flex-direction:column;justify-content:center;gap:8px;background:#fff;overflow:auto;
+}
+.face.front{background:linear-gradient(160deg,var(--sky),#fff)}
+.face.back{transform:rotateY(180deg);background:linear-gradient(160deg,#CCFBF1,#fff);font-size:13.5px;line-height:1.8}
+table.cmp{width:100%;border-collapse:collapse;margin-top:12px;font-size:13.5px}
+table.cmp th,table.cmp td{border:2px solid var(--line);padding:7px;vertical-align:top;text-align:left}
+table.cmp th{background:var(--purple);font-weight:900}
+.board{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin:12px 0}
+@media(max-width:620px){.board{grid-template-columns:repeat(4,1fr)}}
+.cellx{
+  aspect-ratio:1/1;border:2px solid var(--line);border-radius:13px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;font-size:11.5px;font-weight:900;text-align:center;padding:3px;line-height:1.35;
+}
+.cellx.here{outline:4px solid #F472B6;transform:scale(1.05);box-shadow:0 4px 12px rgba(244,114,182,.4)}
+.dice{font-size:46px;text-align:center;margin:6px 0}
+@keyframes roll{0%{transform:rotate(0) scale(1)}50%{transform:rotate(200deg) scale(1.25)}100%{transform:rotate(360deg) scale(1)}}
+.dice.rolling{animation:roll .6s ease}
+#scoreBadge{
+  position:fixed; right:12px; bottom:16px; z-index:80; display:none;
+  background:linear-gradient(120deg,var(--gold),var(--pink)); border:3px solid #fff;
+  box-shadow:0 6px 18px rgba(74,62,61,.25); border-radius:999px; padding:9px 15px;
+  font-weight:900; font-size:clamp(13px,1.9vw,17px); color:var(--ink);
+}
+#scoreBadge.show{display:block}
+@keyframes scorePop{0%{transform:scale(1)}40%{transform:scale(1.6)}100%{transform:scale(1)}}
+#scoreBadge.pop{animation:scorePop .45s}
+#toast{
+  position:fixed; left:50%; bottom:86px; transform:translateX(-50%) translateY(20px); z-index:90;
+  background:#fff; border-radius:16px; padding:10px 18px; font-weight:900; opacity:0;
+  transition:.3s; pointer-events:none; max-width:88vw; text-align:center; font-size:clamp(13px,1.8vw,16px);
+}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#toast.ok{border:3px solid #86EFAC;color:#14532D}
+#toast.no{border:3px solid #F9A8D4;color:var(--bad)}
+canvas#fw{position:fixed;inset:0;z-index:85;pointer-events:none;display:none}
+.pillrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{background:var(--blue);border:2px solid #BFDBFE;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:800}
+details.acc{border:2px solid var(--line);border-radius:14px;background:#fff;padding:8px 12px;margin-top:10px}
+details.acc summary{cursor:pointer;font-weight:900;font-size:clamp(13.5px,1.8vw,16px)}
+.note{font-size:12.5px;color:var(--ink2);margin-top:6px}
+.wbpanel{position:sticky;top:52px;z-index:35;background:#fffdf9f5;backdrop-filter:blur(6px);
+border:2px solid #C4B5FD;border-radius:16px;padding:8px 10px;margin:12px 0;box-shadow:0 6px 18px rgba(74,62,61,.12)}
+.wbpanel .wbhead{font-weight:900;font-size:clamp(12.5px,1.7vw,15px);display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.wbscroll{max-height:30vh;overflow-y:auto;-webkit-overflow-scrolling:touch;margin-top:6px;padding:4px 2px;
+display:flex;flex-wrap:wrap;gap:6px;border-top:1px dashed var(--line)}
+.wbscroll::-webkit-scrollbar{width:7px}.wbscroll::-webkit-scrollbar-thumb{background:#C4B5FD;border-radius:6px}
+.wbpanel.mini .wbscroll{display:none}
+.essay{line-height:2.6;font-size:clamp(14px,1.85vw,17px)}
+.eblank{
+  display:inline-block;min-width:112px;text-align:center;border-bottom:2px solid #F472B6;
+  background:var(--yellow);border-radius:5px 5px 0 0;padding:1px 8px;cursor:pointer;font-weight:800;color:var(--bad);
+}
+.eblank.ok{background:var(--goodbg);color:var(--good);border-color:var(--good)}
+.eblank.no{background:var(--badbg);color:var(--bad);border-color:var(--bad)}
+.qn{display:inline-block;background:#0f766e;color:#fff;border-radius:5px;font-size:.7rem;padding:0 5px;margin-right:3px;vertical-align:middle}
+.row{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);flex-wrap:wrap}
+.row .zhx{flex:1 1 240px;min-width:220px;font-size:.95rem}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header id="topbar">
+  <button id="menuBtn" type="button">☰ 選單</button>
+  <h1>No. 3 🎨龍騰 B1 L3 Do Animals Sleep like You and Me? 連貫式翻譯課文總複習互動學習網</h1>
+</header>
+<div id="menuPanel"></div>
+<main>
+  <section class="panel" id="p-fill"></section>
+  <section class="panel" id="p-hunt"></section>
+  <section class="panel" id="p-mixed"></section>
+  <section class="panel" id="p-trans"></section>
+  <section class="panel" id="p-cause"></section>
+</main>
+<div id="scoreBadge">🏆 累計總分 <span id="scoreVal">0</span>　｜　本輪 <span id="roundVal">0</span>/2000</div>
+<div id="toast"></div>
+<canvas id="fw"></canvas>
+<script>
+/* ===== 計分（Kahoot 全站共用，答對 +200／有錯 −50／下限 0／不歸零） ===== */
+var TOTAL=0, ROUND=0;
+var scoreEl=document.getElementById('scoreVal'), roundEl=document.getElementById('roundVal');
+var badgeEl=document.getElementById('scoreBadge');
+function addScore(n){
+  TOTAL=Math.max(0,TOTAL+n);
+  ROUND=Math.max(0,Math.min(2000,ROUND+n));
+  scoreEl.textContent=TOTAL; roundEl.textContent=ROUND;
+  badgeEl.classList.remove('pop'); void badgeEl.offsetWidth; badgeEl.classList.add('pop');
+}
+var PRAISE=['🌟 太棒了！你是明日之星！','🎉 完美無瑕，繼續保持！','💎 這實力也太亮眼了吧！','🏆 老師以你為榮！','🍬 甜甜的滿分，收下吧！','🚀 火力全開，衝啊！'];
+var ENCOURAGE=['🍬 差一點點，再看一次題目喔！','🌱 沒關係，訂正就是進步的開始！','💪 再試一次，你可以的！','🌤️ 慢慢來，老師陪你一起看！'];
+function pick(a){return a[Math.floor(Math.random()*a.length)];}
+var toastEl=document.getElementById('toast'), toastTimer=null;
+function toast(m,g){toastEl.textContent=m;toastEl.className='on '+(g?'ok':'no');clearTimeout(toastTimer);toastTimer=setTimeout(function(){toastEl.className='';},2400);}
+/* ===== 煙火 ===== */
+var fwc=document.getElementById('fw'), fctx=null, fwParts=[], fwRun=false;
+try{fctx=fwc&&fwc.getContext?fwc.getContext('2d'):null;}catch(e){fctx=null;}
+function fwResize(){if(!fwc)return;fwc.width=window.innerWidth;fwc.height=window.innerHeight;}
+window.addEventListener('resize',fwResize); fwResize();
+var MACARON=['#93C5FD','#C4B5FD','#F9A8D4','#FDE68A','#A7F3D0','#5EEAD4'];
+function fireworks(){
+  if(!fctx)return; fwc.style.display='block'; var waves=0;
+  function burst(){
+    var cx=fwc.width*(0.2+Math.random()*0.6), cy=fwc.height*(0.18+Math.random()*0.45);
+    var col=MACARON[Math.floor(Math.random()*MACARON.length)];
+    for(var i=0;i<60;i++){var a=Math.PI*2*i/60,s=2.2+Math.random()*4.6;
+      fwParts.push({x:cx,y:cy,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:1,c:col,r:2+Math.random()*2.4});}
+    waves++; if(waves<6) setTimeout(burst,210);
+  }
+  burst(); if(!fwRun){fwRun=true;fwLoop();}
+}
+function fwLoop(){
+  if(!fctx){fwRun=false;return;}
+  fctx.clearRect(0,0,fwc.width,fwc.height);
+  for(var i=fwParts.length-1;i>=0;i--){var p=fwParts[i];
+    p.x+=p.vx;p.y+=p.vy;p.vy+=0.08;p.vx*=0.985;p.vy*=0.985;p.life-=0.014;
+    if(p.life<=0){fwParts.splice(i,1);continue;}
+    fctx.globalAlpha=Math.max(p.life,0);fctx.fillStyle=p.c;
+    fctx.beginPath();fctx.arc(p.x,p.y,p.r,0,Math.PI*2);fctx.fill();}
+  fctx.globalAlpha=1;
+  if(fwParts.length>0){requestAnimationFrame(fwLoop);}else{fwRun=false;fwc.style.display='none';}
+}
+function celebrate(){fireworks();toast(pick(PRAISE),true);}
+/* ===== 朗讀（TTS_OK 保護） ===== */
+var TTS_OK=false;
+try{if(typeof window!=='undefined'&&typeof window.speechSynthesis!=='undefined'&&typeof window.SpeechSynthesisUtterance!=='undefined'){TTS_OK=true;}}catch(e){TTS_OK=false;}
+function say(text){
+  if(!TTS_OK){toast('此瀏覽器不支援朗讀功能',false);return;}
+  try{
+    window.speechSynthesis.cancel();
+    var t=String(text).replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+    var chunks=t.length>140?(t.match(/[^.!?]+[.!?]?/g)||[t]):[t];
+    chunks.forEach(function(c){
+      var u=new window.SpeechSynthesisUtterance(c.trim());
+      u.lang='en-US'; u.rate=0.9; window.speechSynthesis.speak(u);
+    });
+  }catch(e){toast('此瀏覽器不支援朗讀功能',false);}
+}
+/* ===== 共用工具 ===== */
+function el(t,c,h){var d=document.createElement(t);if(c)d.className=c;if(h!=null)d.innerHTML=h;return d;}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function norm(s){return String(s||'').toLowerCase().replace(/[\u2018\u2019\u02BC]/g,"'").replace(/[\u201C\u201D]/g,'"').replace(/[.,!?;:"()]/g,'').replace(/\s+/g,' ').trim();}
+function capOK(u,ans){var a=String(ans).trim(),t=String(u).trim();if(!/^[A-Z]/.test(a))return true;return /^[A-Z]/.test(t);}
+function eqWord(a,b){var x=norm(a);if(!x)return false;var alts=String(b).split('/');for(var i=0;i<alts.length;i++){ if(x===norm(alts[i]) && capOK(a,alts[i])) return true; }return false;}
+function shuffle(arr){var a=arr.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function tokens(s){return norm(s).split(' ').filter(Boolean);}
+function coverage(ans,ref){
+  var A=tokens(ans),R=tokens(ref);
+  var stop={a:1,an:1,the:1,is:1,are:1,was:1,were:1,to:1,of:1,in:1,on:1,and:1,it:1,that:1};
+  var key=R.filter(function(w){return !stop[w]&&w.length>2;});
+  if(!key.length)return 1;
+  var hit=0;
+  key.forEach(function(w){for(var i=0;i<A.length;i++){if(A[i]===w||(w.length>4&&A[i].indexOf(w.slice(0,Math.max(4,w.length-2)))===0)){hit++;return;}}});
+  return hit/key.length;
+}
+function autofix(s){
+  var t=String(s||'').replace(/\s+/g,' ').trim();
+  var fix={dont:"don't",cant:"can't",wont:"won't",isnt:"isn't",arent:"aren't",doesnt:"doesn't",didnt:"didn't",theyre:"they're",weve:"we've",ive:"I've",im:"I'm",thats:"that's"};
+  t=t.split(' ').map(function(w){var low=w.toLowerCase().replace(/[.,!?]$/,'');
+    if(fix[low])return w.replace(new RegExp(low,'i'),fix[low]);
+    if(low==='i')return w.replace(/i/i,'I'); return w;}).join(' ');
+  if(t)t=t.charAt(0).toUpperCase()+t.slice(1);
+  if(t&&!/[.!?"]$/.test(t))t+='.';
+  return t;
+}
+function buildBlankSentence(tpl,mk){return String(tpl).replace(/\{\{(\d+)\}\}/g,function(m,n){return mk(parseInt(n,10));});}
+function sayBtn(text){var b=el('button','btn say','🔊');b.onclick=function(){say(text);};b.addEventListener('touchend',function(e){e.preventDefault();say(text);});return b;}
+function ruleBar(){return el('div','rulebar','⚖️ 計分規則（Kahoot!）　✅ 正確 +200　🍬 有錯 −50　🏆 累計不歸零　🛡️ 最低 0 分');}
+function secTitle(t){return el('div','sec-title',t);}
+function makeReveal(){return el('div','reveal');}
+function revealBtn(box,label){var b=el('button','btn ref',label||'📖 參考解答');b.onclick=function(){box.classList.toggle('on');if(box.classList.contains('on')){try{box.scrollIntoView({behavior:'smooth',block:'nearest'});}catch(e){}}};return b;}
+function fbBox(){return el('div','fb');}
+function showFb(box,ok,msg){box.className='fb on '+(ok?'ok':'no');box.innerHTML=msg;try{box.scrollIntoView({behavior:'smooth',block:'nearest'});}catch(e){}}
+function grade(state,ok,fb,okMsg,noMsg){
+  if(state.locked){showFb(fb,ok,ok?'✅ 這題已經完成囉！':(noMsg||'再檢查一次喔！'));return;}
+  if(ok){state.locked=true;addScore(200);showFb(fb,true,okMsg||'✅ 完全正確！ +200 分');celebrate();if(state.onDone)state.onDone();}
+  else{addScore(-50);showFb(fb,false,(noMsg||'🍬 有錯誤，−50 分。')+' '+pick(ENCOURAGE));toast(pick(ENCOURAGE),false);if(state.onTouch)state.onTouch();}
+}
+function makePress(host,opts,answer,slotLabels,orderMatters){
+  var slotWrap=el('div','slots'),pool=el('div','pool'),slots=[],chips={};
+  slotLabels.forEach(function(lab,i){
+    var s=el('div','slot'); s.appendChild(el('span','slotlab',lab)); s.dataset.idx=i; s.dataset.val='';
+    s.onclick=function(){var v=s.dataset.val;if(!v)return;s.dataset.val='';s.className='slot';s.innerHTML='';s.appendChild(el('span','slotlab',lab));chips[v].className='chip';};
+    slots.push(s);slotWrap.appendChild(s);
+  });
+  opts.forEach(function(o){
+    var key=o[0],txt=o[1];
+    var ch=el('button','chip','('+key+') '+esc(txt)); chips[key]=ch;
+    ch.onclick=function(){
+      if(ch.classList.contains('used'))return;
+      var free=null;for(var i=0;i<slots.length;i++){if(!slots[i].dataset.val){free=slots[i];break;}}
+      if(!free){toast('空格已滿，先按壓空格把選項放回來喔！',false);return;}
+      free.dataset.val=key; free.className='slot filled'; free.innerHTML='';
+      free.appendChild(el('span','slotlab',slotLabels[parseInt(free.dataset.idx,10)]));
+      free.appendChild(el('span','chip','('+key+')'));
+      ch.className='chip used';
+    };
+    pool.appendChild(ch);
+  });
+  host.appendChild(slotWrap); host.appendChild(pool);
+  return {check:function(){
+    var got=slots.map(function(s){return s.dataset.val;});
+    if(got.indexOf('')>-1){toast('還有空格沒有填喔！',false);return null;}
+    var ok=orderMatters?got.every(function(v,i){return v===answer[i];}):got.slice().sort().join('')===answer.slice().sort().join('');
+    slots.forEach(function(s,i){
+      var good=orderMatters?(s.dataset.val===answer[i]):(answer.indexOf(s.dataset.val)>-1);
+      s.style.borderColor=good?'#86EFAC':'#F9A8D4'; s.style.background=good?'#DCFCE7':'#FCE7F3';
+    });
+    return ok;
+  }};
+}
+function makeShort(host,item,st){
+  var ta=el('textarea','ta'); ta.setAttribute('placeholder','Write your answer in English here...');
+  host.appendChild(ta);
+  var fb=fbBox(),rv=makeReveal(),aiBox=el('div','reveal');
+  rv.innerHTML='<div class="ansline">📖 參考解答：<b>'+esc(item.a)+'</b></div>'+
+    (item.ref?'<div class="expl"><b>Full reference answer:</b><br>'+esc(item.ref)+'</div>':'')+
+    (item.e?'<div class="expl"><b>【答案與詳解】</b><br>'+item.e+'</div>':'');
+  var chk=el('button','btn chk','✅ 檢查');
+  chk.onclick=function(){
+    var ok=norm(ta.value).length>0&&norm(ta.value).indexOf(norm(item.a))>-1;
+    grade(st,ok,fb,'✅ 答對了！ +200 分','🍬 還沒抓到關鍵字，−50 分。');
+  };
+  var ai=el('button','btn ai','🤖 AI 分析（引導不給答案）');
+  ai.onclick=function(){
+    var v=ta.value.trim(); aiBox.classList.add('on');
+    if(!v){aiBox.innerHTML='<b>🤖 AI 老師：</b>先寫下你的想法吧！哪怕只有一個字也好，老師會陪你一起修 💛';return;}
+    var cov=coverage(v,item.ref||item.a),tips;
+    if(cov>=0.6)tips='你已經抓到方向了！再確認一次：你的答案是不是<b>直接取自文章中的字詞</b>？以及有沒有依照題目要求做<b>詞性或字形變化</b>？';
+    else if(cov>=0.3)tips='方向有一點點偏。試著回到題目指向的那一段，找出<b>意思最接近</b>的關鍵詞，再想想它在句中的<b>詞性</b>。';
+    else tips='先別急著寫答案：把題目的關鍵條件圈出來（例如 means…／refer to…），再回文章中<b>逐句掃描</b>符合條件的字。';
+    aiBox.innerHTML='<b>🤖 AI 老師的引導（不給答案）：</b><br>【你的回答】：'+esc(v)+'<br>【思考提示】：'+tips+
+      '<br>【自我檢核】：① 是否使用<b>文章中出現過</b>的字？② 詞性／單複數／時態是否正確？③ 放回句子唸一次，語意通順嗎？<br>你已經很認真在思考了，再修一次一定更好！💪';
+  };
+  host.appendChild(chk); host.appendChild(ai); host.appendChild(revealBtn(rv));
+  host.appendChild(fb); host.appendChild(aiBox); host.appendChild(rv);
+}
+</script>
+<script>
+/* ============================================================
+   資料一｜例句填空 · 單字搭配詞（VOCAB 40 題）
+   ============================================================ */
+var VOCAB = [
+ {s:"Samuel {{B}} if he will lose some weight after he joins the swimming club.", h:"w______rs", a:"wonders"},
+ {s:"Kelly always {{B}} about the things she recalls from her dreams and what they mean.", h:"w______rs", a:"wonders"},
+ {s:"It's {{B}} how bright the stars are outside of the city at night!", h:"a______g", a:"amazing"},
+ {s:"It often {{B}} people that pigs are smarter than dogs.", h:"a______es", a:"amazes"},
+ {s:"The travelers stood there in {{B}} as they looked at the huge rainbow up in the sky.", h:"a______t", a:"amazement"},
+ {s:"Helen usually scores above {{B}} on her exams because she always studies much harder than her classmates.", h:"a______e", a:"average"},
+ {s:"As a police officer, Amy makes a little more money than the national {{B}}.", h:"a______e", a:"average"},
+ {s:"The runners finished the race in an {{B}} of two minutes and ten seconds.", h:"a______e", a:"average"},
+ {s:"Even though the price of some new smartphones is high, the {{B}} price continues to drop every year.", h:"a______e", a:"average"},
+ {s:"The {{B}} teenager would rather send a LINE message than write a letter to a friend.", h:"a______e", a:"average"},
+ {s:"The boots were much more expensive than Tina had expected; {{B}}, she didn't buy them.", h:"t______e", a:"therefore"},
+ {s:"Craig has a bad habit of staying up late and then {{B}} several times during the day.", h:"n______ping", a:"napping"},
+ {s:"Everybody in the Su family likes to take a {{B}} right after lunch on weekends.", h:"n______p", a:"nap"},
+ {s:"Jenna threw a piece of bread into the pond and watched it {{B}} until a fish ate it.", h:"f______t", a:"float"},
+ {s:"The couple lay on the grass and enjoyed the view of the clouds as they {{B}} across the sky.", h:"f______ted", a:"floated", note:"<b>這句話：［這對情侶在草地上，並享受雲朵在天上流動的景觀／色。］還有另外兩種道地的講法：</b><br><br>【例二】The couple lay on the grass and enjoyed the view of the clouds <b>while they were floating</b> across the sky.<br><br>【例三】The couple lay on the grass and enjoyed <b>the view of</b> the clouds <b>floating</b> across the sky.<br><br><b>＊這兩個版本的語意細膩度之差別，說明如下：</b><br>（1）<b>【as + 簡單式】</b>最俐落。as 本身已帶「隨著／當……之際」的同步感，動詞用簡單過去即可，<b>進行式反而重複</b>。這是兩者中最像母語者寫作的版本。<br>（2）<b>【while + 進行式】</b>是教科書標準搭配。while 專門標示「持續的背景」，配 were floating 天生契合，語感上把畫面「定格延長」，適合用在描寫連續性動作與短暫動作幾乎同時發生但仍有先後順序時。<br>（3）而且 as 有多義（當……時／因為／隨著），配上 they 指涉模糊（they 理論上可回指 the couple），在 EMI 學術寫作裡是可以挑剔的一點。要精準就改用 while，或直接刪掉連接詞寫成：The couple lay on the grass and enjoyed <b>the view of</b> the clouds <b>floating</b> across the sky.<br>（4）另外提醒一個大家常犯的錯誤：enjoy the view of 後面接<b>（動）名詞片語</b>，所以只能寫 the clouds <b>floating</b> across the sky，不能寫成 the clouds <b>float／floated</b>——因為 enjoy 不是感官動詞，沒有「enjoy＋受詞＋原形／現在分詞／過去分詞」這類感官動詞的句型。"},
+ {s:"The family {{B}} getting stuck in the traffic jam by leaving home very early in the morning.", h:"a______ded", a:"avoided"},
+ {s:"When too many people boarded the little boat, it began to sink below the {{B}} of the water.", h:"s______e", a:"surface"},
+ {s:"The yoga teacher told her students to {{B}} in as they lifted their arms above their heads.", h:"b______e", a:"breathe"},
+ {s:"It's so nice to go mountain climbing and {{B}} the fresh air.", h:"b______e", a:"breathe"},
+ {s:"The little boy was out of {{B}} after his father chased him around the park.", h:"b______h", a:"breath"},
+ {s:"The loud music from the neighbors' party kept the whole family {{B}} all night.", h:"a______e", a:"awake"},
+ {s:"Sherry {{B}} from a deep sleep and saw that her dog was sitting on the bed and watching her.", h:"a______e", a:"awoke"},
+ {s:"The sound of fireworks at the nearby temple {{B}} the sleeping baby.", h:"a______e", a:"awoke"},
+ {s:"It's so {{B}} that Brian can say \u201Chello\u201D and \u201Cthank you\u201D in more than fifteen languages!", h:"i______e", a:"impressive"},
+ {s:"Michelle liked to {{B}} her friends with her yo-yo tricks.", h:"i______s", a:"impress"},
+ {s:"The new worker left a good {{B}} on most of the staff members on her first day.", h:"i______n", a:"impression"},
+ {s:"The {{B}} between the eastern end of Russia and the western one is about ten thousand kilometers.", h:"d______e", a:"distance"},
+ {s:"In large cities in Taiwan, it is common to find more than one restaurant within walking {{B}} of one's home.", h:"d______e", a:"distance"},
+ {s:"If you live in a big city, the downtown area may be {{B}} from your home.", h:"d______t", a:"distant"},
+ {s:"After high school, the two best friends plan to go on a {{B}} around the world.", h:"j______y", a:"journey"},
+ {s:"Baby birds usually take {{B}} for the first time after they are only about two or three weeks old.", h:"f______t", a:"flight"},
+ {s:"When Mrs. Kuo arrived at the airport, she learned that her {{B}} was going to be thirty minutes late.", h:"f______t", a:"flight"},
+ {s:"That store sells a wide {{B}} of children's toys and books.", h:"v______y", a:"variety"},
+ {s:"Smartphone cases {{B}} in color, size, shape, and material, but all of them have the same basic function.", h:"v______y", a:"vary"},
+ {s:"The festival was canceled for {{B}} reasons, like poor weather and lack of interest.", h:"v______s", a:"various"},
+ {s:"Nick is kind-hearted. He wouldn't hurt any living {{B}}, not even a mosquito.", h:"c______e", a:"creature"},
+ {s:"Mr. Yang is an {{B}} in math. I'm glad to have him as my tutor.", h:"e______t", a:"expert"},
+ {s:"Some animals are able to {{B}} from season to season by changing the color of their fur.", h:"s______e", a:"survive"},
+ {s:"Fortunately, all 103 passengers {{B}} the plane crash.", h:"s______ed", a:"survived"},
+ {s:"The news report said that the missing mountain climbers had a low chance of {{B}}.", h:"s______l", a:"survival"}
+];
+/* ============================================================
+   資料二｜慣用語與片語（IDIOMS 6 題）
+   ============================================================ */
+var IDIOMS = [
+ {zh:"當你站在移動中的巴士時，抓住車上的桿子是個好主意。",
+  en:"It is a good idea to {{1}} {{2}} {{3}} one of the poles while you are standing on a moving bus.", a:["hold","on","to"]},
+ {zh:"當你在森林裡健行時，一定要小心蜂群出沒。",
+  en:"Make sure to {{1}} {{2}} {{3}} bees when you go hiking in the forest.", a:["look/watch","out","for"], note:"<b>兩者都是「小心、提防」，後面接可能造成麻煩的對象。</b><br><br>（1）單獨當驚呼時也都成立：Watch out! ／ Look out!（小心！）<br><br>（2）差別<br>　<b>watch out for</b>（核心語意：【警告】：留意危險）<br>　<b>look out for</b>（核心語意：【警告】：留意、注意找（可能是危險，也可能是期待的東西））<br><br>（3）Watch out for something ／ Look out for something 用法之異同：<br>　Watch out for something. 幾乎只能理解為「當心」。而 Look out for something 也可解讀為「留意找（好東西）」，如 Look out for a red mailbox — that's my house.<br><br>　另一常見的用法：<b>look out for sb</b> 照顧、關照某人。例句：She always looks out for her little brother.<br><br>原句：Make sure to <b>watch out for</b> bees when you go hiking in the forest.<br>→ 最不會誤解，純粹的「當心蜜蜂」，是這句的自然首選。<br><br>Make sure to <b>look out for</b> bees when you go hiking in the forest.<br>→ 母語者仍會理解成「當心蜜蜂」（因為 bees 本身帶威脅性），但若換成中性名詞就會翻盤：Look out for a blue sign.（留意找藍色標誌）而不是「小心藍色標誌」。"},
+ {zh:"暴風雨過後，在山區開車要小心落石。",
+  en:"{{1}} {{2}} {{3}} {{4}} {{5}} falling rocks when you drive through the mountains after a rainstorm.", a:["Be","on","the","lookout","for"]},
+ {zh:"Katie 記憶力很好。舉例來說，她可以把一篇短文讀過一遍後就背起來。",
+  en:"Katie has a really good memory. {{1}} {{2}}, she can memorize a short passage after she reads it once.", a:["For","example"]},
+ {zh:"根據這篇新聞報導，這整個村莊都被這場地震摧毀了。",
+  en:"{{1}} {{2}} this news report, the whole village was ruined by the earthquake.", a:["According","to"]},
+ {zh:"令人驚奇的是，有些泳者可以憋氣長達二十分鐘。",
+  en:"Amazingly, some swimmers can hold their breath for {{1}} {{2}} twenty minutes.", a:["up","to"]}
+];
+/* ============================================================
+   資料三｜例句重要搭配詞 Guided Translation（COLLOC 5 題，每格可能不只一字）
+   ============================================================ */
+var COLLOC = [
+ {zh:"月考快到了，我認為靠自己複習所有的課程並不難。我不想下課後去圖書館或補習班。然而，我發現我的房間不是個理想的學習或工作環境。它太過令人分心，我時常發現自己在偷懶。",
+  en:"The monthly exam is around the corner, and I think I will have little difficulty reviewing all the lessons {{1}}. I don't want to go to a library or cram school after class. However, I find my room not an ideal learning or {{2}}. It is too distracting, and I find myself fooling around from time to time.",
+  a:["on my own","working environment"]},
+ {zh:"比如說，在念書念了一陣子之後，我真的很渴望喝杯珍珠奶茶並休息一下。我覺得偶而喝杯含糖飲料對我們沒什麼危害。有人說像這樣的飲料對我們的健康有害，但奶茶也不是什麼致命毒藥。每當我看到一群學生在校門口等外送員來時，我總是羨慕地看著他們。",
+  en:"After studying for a while, I {{1}} a cup of pearl milk tea and a short break. While some say such drinks damage our health, indulging occasionally {{2}}. After all, milk tea is {{3}}. Whenever I see {{4}} waiting for delivery riders at the school's main entrance, I can't help but look on {{5}}.",
+  a:["really long for/am really eager for/find myself craving","does us little harm/is not harmful to us/is not detrimental to us","not a deadly poison/hardly a deadly poison","a crowd of students/crowds of students/hordes of students","with envy"]},
+ {zh:"因此，我毫不遲疑在網路上訂了一杯飲料。然而，在外送員抵達之前，我媽很生氣地說飲料杯都是塑膠做的，是會傷害自然環境的化學物質。她說道，因為我們已經被太多有毒物質圍繞了，我不應該再製造更多垃圾。",
+  en:"Therefore, I order a drink online without any hesitation. However, before the delivery person {{1}}, my mom says angrily that beverage cups are made of plastic, which is a {{2}} that harms the {{3}}. She says that because we {{4}} too many poisonous substances, I shouldn't produce more trash.",
+  a:["comes along","chemical substance","natural environment","are already surrounded by"]},
+ {zh:"最後我什麼也沒有喝。我發現在適當的時間與地點念書，在取得好成績方面扮演關鍵的角色。畢竟家裡面誘惑太多，媽媽也愛對我嘮叨。我決定把課本收一收，出發前去圖書館。",
+  en:"I {{1}} nothing at all. I find that studying {{2}} {{3}} academic success. There are too many distractions back home after all, and my mum is always nagging me. I decide to {{4}} and leave for the library.",
+  a:["end up drinking","at the proper place and time","plays a key role in","pack my textbooks up"]},
+ {zh:"在一個被書本環繞的地方，我應該可以更專心。",
+  en:"I might be more focused in a place where I {{1}}.",
+  a:["am surrounded with books"]}
+];
+/* ============================================================
+   資料四｜課文尋寶闖關 · 六段課文填空（READING 52 空）
+   ============================================================ */
+var READING = [
+ {n:1,
+  en:"You {{1}} know that brown bears hibernate and that goldfish sleep {{2}} closing their eyes, but have you {{3}} wondered {{4}} other animals sleep? You might be {{5}} when you read some {{6}} the {{7}} amazing facts {{8}} animals' {{9}} habits.",
+  zh:"你也許知道棕熊會冬眠，金魚睡覺時眼睛不用閉著，但是你有想過其他動物怎麼睡覺嗎？以下是一些有關動物睡眠習慣的奇妙事實，你讀的時候可能會覺得驚訝。",
+  a:{1:"may",2:"without",3:"ever",4:"how",5:"surprised",6:"of",7:"following",8:"about",9:"sleeping"}},
+ {n:2,
+  en:"{{10}} most mammals, giraffes sleep very little. {{11}} fact, it is {{12}} that some giraffes sleep only thirty minutes {{13}} {{14}} on average. When a giraffe sleeps, it curls its long neck and {{15}} its head on its hip. {{16}}, {{17}} are often predators {{18}}, and a giraffe can't stand up from this position very quickly. Therefore, a giraffe never naps {{19}} too long.",
+  zh:"有別於大部分的哺乳類動物，長頸鹿睡得很少。事實上，據報導有些長頸鹿平均一天只睡三十分鐘。長頸鹿睡覺時，會捲曲著脖子，把頭放在臀部上。然而，常常有掠食者在附近，用這個姿勢睡覺沒辦法迅速站直，因此長頸鹿從來都不會睡太久。",
+  a:{10:"Unlike",11:"In",12:"reported",13:"a",14:"day",15:"lays",16:"However",17:"there",18:"around",19:"for"}},
+ {n:3,
+  en:"Sea otters, {{20}} of the world's {{21}} animals, perhaps have the cutest sleeping position. Groups of sea otters float on their backs and hold hands {{22}} they are sleeping! They can rest on the land, but they are {{23}} safer in the water. {{24}} avoid floating {{25}}, they lock their little paws together and hold on to {{26}} {{27}}.",
+  zh:"海獺是世界上最可愛的動物之一，或許牠們的睡姿也是最可愛的。成群的海獺睡覺時，會手牽手仰漂在海面上！牠們可以在陸地上休息，但是在水上會更安全。為了避免漂走，牠們會緊扣彼此的小爪子，把對方抓牢。",
+  a:{20:"one",21:"cutest",22:"while",23:"much",24:"To",25:"away",26:"each",27:"other"}},
+ {n:4,
+  en:"Dolphins have one of the most amazing sleeping secrets: only {{28}} their brain is asleep {{29}} a time! One of the reasons for this {{30}} that they {{31}} swim to the surface {{32}} every twenty minutes {{33}} breathe. They also have to look out for sharks and other predators. When one half of their brain goes to sleep, the {{34}} half {{35}} awake to help them swim, breathe, and {{36}} on the lookout for danger.",
+  zh:"海豚有一個令人驚奇不已的睡眠小祕密：每次睡覺只有半邊腦是睡著的！這種睡眠習慣的其中一個原因是牠們必須每二十分鐘就游上水面呼吸，同時牠們還得注意鯊魚和其他掠食者。當牠們半邊的腦睡著的時候，另外半邊的腦部會保持清醒，以利牠們游泳、呼吸和注意危險。",
+  a:{28:"half",29:"at",30:"is",31:"must",32:"once",33:"to",34:"other",35:"stays",36:"be"}},
+ {n:5,
+  en:"Some migratory birds have {{37}} {{38}} impressive way {{39}} sleeping: they sleep up in the sky! For example, Alpine swifts have to keep {{40}} for a long time over a great distance {{41}} their journeys to and from Africa. {{42}} the way, they eat insects in the air and take little naps {{43}} in flight. This habit can save their lives {{44}} they may {{45}} caught by wild animals if they land. According to {{46}}, these amazing little birds may {{47}} {{48}} {{49}} stay in the air for up to two hundred days without needing to land and get some sleep.",
+  zh:"有些候鳥則有另一項驚人的睡眠方式：邊飛邊睡！以高山雨燕為例，牠們在往返非洲的長程旅途中，必須長時間飛行。牠們沿途在空中吃昆蟲，也會在飛行中小睡。這種習慣可以保全性命，因為如果牠們著陸，就可能被野生動物給吞下肚。據研究，這種神奇的小鳥可以連續飛行長達 200 天，無須落地補眠。",
+  a:{37:"yet",38:"another",39:"of",40:"flying",41:"during",42:"Along",43:"while",44:"since",45:"be",46:"studies",47:"be",48:"able",49:"to"}},
+ {n:6,
+  en:"The sleeping habits of the giraffe, sea otter, dolphin, and Alpine swift may {{50}} quite amazing. {{51}} these are just four examples. The wide variety of sleeping habits in the animal kingdom shows {{52}} different creatures have different ways of avoiding danger. As you can see, each animal is an expert at surviving in the wild.",
+  zh:"長頸鹿、海獺、海豚和高山雨燕的睡眠習慣看似相當神奇，然而這些只不過是四個例子。在動物世界裡有各式各樣的睡眠習慣，顯示不同的動物如何用不同的方式避險。誠如你所見，每種動物都有獨到的野外生存之道。",
+  a:{50:"seem",51:"Yet",52:"how"}}
+];
+/* ============================================================
+   資料七｜綜合測驗 4 篇
+   ============================================================ */
+var CLOZE1_PASSAGE =
+"Today, we are going to look at the sleeping habits of bats. How are these animals able to sleep upside down? The answer is that they have claws at the ends of their lower limbs so they can __(1)__ objects such as tree branches without any effort.<br><br>"+
+"To compare this ability with humans, when a fist __(2)__ by a human, he or she must tighten some muscles in the arm and hand; when he or she relaxes those muscles, the fist is lost. By contrast, a bat's claws are connected not to any muscles but rather to the bat's entire upper body. __(3)__, when a bat's claws close around an object and the bat hangs upside down, its hanging weight causes the claws to tighten. The bat may then sleep comfortably without __(4)__ any energy to keep its claws locked this way.<br><br>"+
+"__(5)__ the bats sleep upside down, they do not need to use a lot of energy to start flying. A bat simply wakes up, releases its claws, and takes to the air.";
+var CLOZE1 = [
+ {q:"(1)", o:["look out for","hold on to","bump into","come up with"], k:1, e:"(A) 當心……出現　(B) 緊緊抓住　(C) 偶然遇見　(D) 想出……。蝙蝠用爪子「緊緊抓住」樹枝，故選 hold on to。"},
+ {q:"(2)", o:["is making","is made","makes","made"], k:1, e:"根據語意，此處應為被動 S + be + p.p. (+ by + O) 的句型，因此答案要選擇 is made。"},
+ {q:"(3)", o:["Besides","Instead","Therefore","Otherwise"], k:2, e:"(A) 除此之外　(B) 反之　(C) 因此　(D) 否則。前後為因果關係，故選 Therefore。"},
+ {q:"(4)", o:["used","use","uses","using"], k:3, e:"without + N/V-ing 不用……，故選動名詞 using。"},
+ {q:"(5)", o:["Since","If","So","Once"], k:0, e:"此處語意為因果關係，所以要選擇 since 表因為。"}
+];
+var CLOZE2_PASSAGE =
+"Unlike other large cats that live in Africa, cheetahs* are highly active during the day. This is mainly so they can hunt while other animals __(1)__. You may think this feature causes difficulty for cheetahs because daylight would enable the animals they hunt to __(2)__ them. But cheetahs are up for this difficulty by being extra careful; in this way, they won't __(3)__ by other animals. They also make use of their __(4)__ speed; a cheetah can reach a top speed of over 100 kilometers per hour!<br><br>"+
+"Another interesting thing about these cats is the differences in the behavior* of males and females. Both males and females have a large home range. This means they travel __(5)__ long distances to seek food. However, females seem to prefer time spent alone; they usually only hang out with others while nursing their babies. By contrast, males tend to be more social, often spending time in groups of their brothers and sisters.<br><br>"+
+"<span class='note'>註：cheetah 獵豹　behavior 行為</span>";
+var CLOZE2 = [
+ {q:"(1)", o:["have slept","will sleep","are sleeping","slept"], k:2, e:"while 後面的子句通常要和進行式連用，因此本題答案要選擇 are sleeping。"},
+ {q:"(2)", o:["make use of","be on the lookout for","hang out with","hold on to"], k:1, e:"(A) 利用　(B) 當心……出現　(C)（與某人）一起出去　(D) 緊緊抓住。獵物會「提防」獵豹，故選 be on the lookout for。"},
+ {q:"(3)", o:["be detected","be detecting","detected","detecting"], k:0, e:"根據語意，此處應為被動 S + be + p.p. (+ by + O) 的句型，因此答案要選擇 be detected。"},
+ {q:"(4)", o:["various","average","amazing","distant"], k:2, e:"(A) 各式各樣的　(B) 平均的　(C) 令人驚奇的　(D) 遙遠的。時速超過 100 公里是「驚人的」速度，故選 amazing。"},
+ {q:"(5)", o:["with","upon","over","between"], k:2, e:"由於空格後面是 long distances，因此本題要選擇 over，表示「經過……距離」。"}
+];
+var CLOZE3_PASSAGE =
+"There are only a handful of underwater hotels around the world. These hotels allow guests to do what few people ever dream of doing: sleep underwater. Fish, of course, do this all the time, but humans are __(1)__ more unlikely to lay their heads on the seabed. That's because in order to __(2)__, mammals like us must have sufficient air to breathe. How do sea mammals, then, manage to get their sleep?<br><br>"+
+"A number of studies __(3)__ to answer this question. Research on whales, __(4)__, suggests that these ocean giants make use of a special sleeping technique known as \u201Clogging.\u201D While logging, whales are able __(5)__ down just one half of their brains. This enables them to get some much-needed rest. At the same time, they can remain alert enough to know __(6)__ they should go up to breathe.<br><br>"+
+"__(7)__ another sea creature that relies on logging to survive is the dolphin. Unlike whales, which can remain underwater for as long as ninety minutes, dolphins need to come to the __(8)__ to breathe in some fresh air every twenty minutes. They also need to __(9)__ predators such as sharks. Thus, it's even more important for them to keep half their brains __(10)__ at all times. Thanks to logging, there's no need for us to lose any sleep over sea mammals.";
+var CLOZE3 = [
+ {q:"(1)", o:["so","too","much","very"], k:2, e:"可用 much 來修飾比較級，表示「更……得多」。"},
+ {q:"(2)", o:["land","connect","reply","survive"], k:3, e:"survive 存活。哺乳類必須有足夠空氣才能「存活」，故選 survive。"},
+ {q:"(3)", o:["have done","have been done","have been doing","to have done"], k:1, e:"have been done 完成式被動語態用法。"},
+ {q:"(4)", o:["for example","at last","after all","in addition"], k:0, e:"(A) 舉例來說　(B) 終於　(C) 畢竟　(D) 此外。以鯨魚為例，故選 for example。"},
+ {q:"(5)", o:["shut","shutting","to shut","to shutting"], k:2, e:"be able to VR 能夠……，故選 to shut。"},
+ {q:"(6)", o:["what","which","why","when"], k:3, e:"此句型為 S + V + wh- (+ S) + V....，when 引導後面的間接問句，當作 know 的受詞。"},
+ {q:"(7)", o:["Yet","After","Below","Around"], k:0, e:"yet 在此為副詞，表示「還有……」，用以加強語氣。"},
+ {q:"(8)", o:["impression","surface","variety","creature"], k:1, e:"surface 表面。海豚必須游到水「面」呼吸，故選 surface。"},
+ {q:"(9)", o:["make use of","put an end to","be on the lookout for","stay in touch with"], k:2, e:"(A) 利用……　(B) 結束……　(C) 當心……出現　(D) 與……保持聯絡。"},
+ {q:"(10)", o:["awake","amazing","personal","memorable"], k:0, e:"(A) 醒著的　(B) 令人大感驚奇的　(C) 個人的　(D) 難忘的。"}
+];
+var CLOZE4_PASSAGE =
+"The animal kingdom contains both carnivores* and herbivores*. Put simply, a carnivore is an animal that eats the meat of other animals. __(1)__, a lion is a carnivore. __(2)__ carnivores, herbivores only eat plants and thus are somewhat similar to human vegetarians*.<br><br>"+
+"Many people feel that the panda is extremely cute and __(3)__ it is a gentle giant. Furthermore, __(4)__ many books, these animals are herbivores. However, this may not be the case.<br><br>"+
+"Everyone knows __(5)__ pandas like to eat: bamboo. __(6)__ pandas' diet consists mainly of this plant, many believe pandas to be vegetarian. This hard plant is __(7)__ by the panda with the help of special bacteria in its stomach. However, let's not forget that although it may appear gentle, the panda is __(8)__ a type of bear. __(9)__, it has a carnivore's digestive* system.<br><br>"+
+"In 2011, cameras in Sichuan, China, captured a video of a giant panda chewing on the meat of a dead wild cow. In addition, pandas are known to sometimes hunt for and eat small mouse-like __(10)__. These findings indicate that pandas' deep-rooted status* as members of the bear family still sometimes shows its face.<br><br>"+
+"<span class='note'>註：carnivore 肉食性動物　herbivore 草食性動物　vegetarian 素食主義者　digestive 消化的　status 身分</span>";
+var CLOZE4 = [
+ {q:"(1)", o:["Right away","Therefore","After all","For example"], k:3, e:"(A) 馬上　(B) 因此　(C) 畢竟　(D) 舉例來說。以獅子為例，故選 For example。"},
+ {q:"(2)", o:["Unlike","Like","Alike","Dislike"], k:0, e:"unlike + N 不像……，草食動物與肉食動物形成對比。"},
+ {q:"(3)", o:["what","which","that","it"], k:2, e:"此處由 that 引導名詞子句，當作 feel 的另一個受詞。"},
+ {q:"(4)", o:["thanks to","according to","except for","beside"], k:1, e:"(A) 幸虧　(B) 根據　(C) 除了……之外　(D) 在……旁邊。"},
+ {q:"(5)", o:["what","that","which","how"], k:0, e:"此處由 what 引導間接問句當作 knows 的受詞，而且 what 同時也當作間接問句裡的 eat 的受詞。"},
+ {q:"(6)", o:["Although","Since","Unless","While"], k:1, e:"因為空格後的兩個子句句意有因果關係，所以要選擇 since，表原因。"},
+ {q:"(7)", o:["digesting","digest","to digest","digested"], k:3, e:"根據語意，此處應為被動 S + be + p.p. (+ by + O) 的句型，因此答案要選擇 digested。"},
+ {q:"(8)", o:["in time","in detail","in secret","in fact"], k:3, e:"(A) 及時　(B) 詳細地　(C) 祕密地　(D) 事實上。"},
+ {q:"(9)", o:["Otherwise","Therefore","Besides","However"], k:1, e:"(A) 否則　(B) 因此　(C) 此外　(D) 然而。"},
+ {q:"(10)", o:["impressions","distances","creatures","surfaces"], k:2, e:"(A) 印象　(B) 距離　(C) 生物　(D) 表面。"}
+];
+/* ============================================================
+   資料七-2｜混合題 2 篇
+   ============================================================ */
+var MIX1_PASSAGE =
+"As a busy senior-high-school student, you must have experienced the situation of burning the midnight oil before exams. Yet if you consistently don't get enough sleep, more than just your test scores may suffer. It is reported that Randy Gardner, a 17-year-old high-school student, stayed awake for 264 hours, or 11 days. He did so as an experiment in order to study how he would behave without sleep. His eyes lost focus on day two. Then, his ability to identify objects was gone, and he became moody and clumsy. By the end of the experiment, he had trouble concentrating, memorizing things, and distinguishing between reality and fantasy. Although he recovered with no psychological or physical damage, the results could have been fatal. Quite obviously, a lack of sleep has a negative effect on the human body and mind.<br><br>"+
+"According to sleep experts, humans need to sleep to clear the waste products in their brains. When awake, we use up our energy sources, and these sources get broken into various by-products. As these chemical by-products build up, they increase the urge to sleep. If they are not cleared away, they can overload the brain. Accordingly, many negative symptoms of sleep deprivation arise.";
+var MIX1 = [
+ {type:'fill', q:"(1) 以下短文簡短摘要上方文章內容。請從上方文章中選出兩個單詞（word），分別填入下列空格，並視語法需要作適當的字形變化，使句子語意完整、語法正確，且符合原文文意。",
+  stem:"A lack of sleep can \u2460{{1}} affect not only test performance but also overall well-being. Sleep experts explain that sleeping is essential for \u2461{{2}} brain waste and avoiding the harm brought by sleep deprivation.",
+  a:["negatively","clearing"],
+  expl:"答案：\u2460 <b>negatively</b>　\u2461 <b>clearing</b><br>本篇試題文本呼應本課課文與睡眠相關的主題，介紹睡眠的重要性，以及睡眠不足的後果。本篇試題測驗學生理解文意、擷取細節資訊，以及從上下文推論詞語字義的能力。<br>缺乏睡眠不僅會對考試表現產生負面影響，還會損害整體健康。睡眠專家解釋，睡眠對於清除大腦中的廢物並避免睡眠不足帶來的危害是至關重要的。<br>\u2460 空格後接動詞 affect，需用副詞修飾，取原文 negative 之副詞形 negatively。<br>\u2461 介系詞 for 之後需接動名詞，取原文 clear 改為 clearing。"},
+ {type:'press', q:"(2) From (A) to (F) below, which THREE of the following statements are true according to the passage?",
+  opts:[["A","Randy Gardner performed an experiment in order to break a world record."],
+        ["B","On the second day of the experiment, Randy Gardner's vision became unfocused."],
+        ["C","Randy Gardner was hospitalized after the experiment because of serious health issues."],
+        ["D","Chemical by-products increase in the brain when a person remains awake for too long."],
+        ["E","Randy Gardner's experiment proves that sleeping too much is worse than not sleeping at all."],
+        ["F","Randy Gardner is a 17-year-old student who conducted a sleep deprivation experiment."]],
+  a:["B","D","F"], slots:3,
+  expl:"答案：<b>BDF</b><br>下方 (A) 到 (F) 中，哪三個敘述是根據本文正確的敘述。<br>(A) Randy Gardner 進行一項實驗是為了打破世界紀錄。→ 錯誤，他是為了研究沒有睡眠會如何表現。<br>(B) 在實驗的第二天，Randy Gardner 的視力變得模糊。→ 正確。<br>(C) Randy Gardner 在實驗後因為嚴重的健康問題住院。→ 錯誤，他並未留下生理或心理損害。<br>(D) 當一個人長時間保持清醒時，化學副產品在大腦中會增加。→ 正確。<br>(E) Randy Gardner 的實驗證明睡得過多比不睡覺更糟。→ 錯誤，文中未提。<br>(F) Randy Gardner 是一名 17 歲的學生，他進行了睡眠剝奪實驗。→ 正確。"},
+ {type:'short', q:"(3) Which phrase in the passage means \u201Cworking or studying late into the night\u201D?",
+  a:"burning the midnight oil",
+  ref:"burning the midnight oil \u2014 In the first sentence, the writer says that a busy senior-high-school student must have experienced the situation of burning the midnight oil before exams, which means working or studying late into the night.",
+  e:"答案：<b>burning the midnight oil</b><br>在文章中哪一個片語的意思是「工作或唸書直至深夜」？第一句 burning the midnight oil before exams 即「考前熬夜苦讀」。"}
+];
+var MIX2_PASSAGE =
+"Liam, Sofia, and Marco are discussing siesta culture in Spain.<br><br>"+
+"<b>Liam:</b> I've always found Spain's siesta culture fascinating. Taking a break in the middle of the day seems like a great way to recharge, but I wonder if it's still common nowadays.<br>"+
+"<b>Sofia:</b> That's a good question. Traditionally, people took a siesta because of the heat, especially in southern Spain, but many modern jobs don't allow for such long breaks anymore. Some businesses stay open all day now.<br>"+
+"<b>Marco:</b> That's true, but in smaller towns, you can still see shops closing in the afternoon. I think the tradition is changing, but it hasn't disappeared completely. My uncle in Seville still follows it; he says it helps him stay productive in the evenings.<br>"+
+"<b>Liam:</b> I can see how it would be beneficial, but wouldn't it make the workday longer? If people take a long lunch break, they probably have to work later.<br>"+
+"<b>Sofia:</b> Exactly! In some cases, the workday stretches into the evening, which isn't ideal for everyone. That's why many Spaniards, especially younger ones, prefer a continuous schedule instead.<br>"+
+"<b>Marco:</b> But it's not just about work. Siestas are also about lifestyle. Spanish people enjoy late dinners and socializing at night. Without this break, it would be harder to maintain that tradition.<br>"+
+"<b>Liam:</b> That makes sense. I guess whether siestas remain popular depends on individual preferences and work demands.<br>"+
+"<b>Sofia:</b> Right. It's a practice that's adapting with time, but it still holds significance for many Spaniards.";
+var MIX2 = [
+ {type:'fill', q:"(1) 以下短文簡短摘要上方對話重點。請從上方對話文字中選出兩個單詞（word），分別填入下列空格，並視語法需要作適當的字形變化，使句子語意完整、語法正確，且符合原文文意。",
+  stem:"The speakers explore the \u2460{{1}} practice of the siesta in Spain, focusing on its historical background and how modern life has influenced it. According to their discussion, midday rest can provide health \u2461{{2}} and improve productivity, though it is becoming less practical in modern urban settings.",
+  a:["cultural/traditional","benefits"],
+  expl:"答案：\u2460 <b>cultural／traditional</b>　\u2461 <b>benefits</b><br>本篇試題呼應課本動物睡眠的主題，以對話討論的形式介紹西班牙的午睡文化，以及現代生活對這個傳統帶來的改變。回答本篇試題時，學生需具備理解文意、擷取細節資訊，以及從上下文推論代名詞指涉對象的能力。<br>談話者探討了西班牙的午休文化／傳統習俗，重點關注其歷史背景以及現代生活對其的影響。根據他們的討論，午間休息可以帶來健康益處並提升生產力，儘管在現代城市環境中變得愈來愈不實用。<br>\u2460 空格後接名詞 practice，需用形容詞，取原文 culture／tradition 之形容詞形。<br>\u2461 provide health ___ 需用名詞複數，取原文 beneficial 之名詞形 benefits。"},
+ {type:'press', q:"(2) From (A) to (F) below, choose the statements about Spain's siesta culture that are true.",
+  opts:[["A","In the past, the Spanish government required all citizens to take a siesta daily."],
+        ["B","Modern technology and air conditioning have made siestas more popular in Spain."],
+        ["C","Nowadays, siestas are more commonly observed in small towns than in big cities."],
+        ["D","Siestas were originally meant to help people rest during the hottest hours of the day."],
+        ["E","Some businesses in Spain still close in the afternoon to allow workers to take a break."],
+        ["F","Spaniards who take siestas every day tend to sleep fewer hours at night than those who don't."]],
+  a:["C","D","E"], slots:3,
+  expl:"答案：<b>CDE</b><br>從以下 (A) 到 (F) 選出關於西班牙午休文化的正確的敘述。<br>(A) 過去，西班牙政府要求所有公民每天都要午休。→ 錯誤，文中未提政府規定。<br>(B) 現代科技和空調的普及使午休在西班牙變得更加流行。→ 錯誤，現代工作反而使午休減少。<br>(C) 如今，在小城鎮午休文化比大城市更常見。→ 正確。<br>(D) 午休最初的目的是幫助人們在最炎熱的時段休息。→ 正確。<br>(E) 西班牙的一些商家仍然在下午關門，讓員工可以休息。→ 正確。<br>(F) 每天午休的西班牙人往往會比不午休的人晚上睡得更少。→ 錯誤，文中未提。"},
+ {type:'short', q:"(3) What does the pronoun \u201Cit\u201D in Marco's part of the text refer to?",
+  a:"the tradition",
+  ref:"the tradition \u2014 In Marco's first turn, he says the tradition is changing but it hasn't disappeared completely, and then adds that his uncle in Seville still follows it. The pronoun therefore points back to the siesta tradition.",
+  e:"答案：<b>the tradition</b><br>在 Marco 的談話內容中，代名詞「it」指涉的對象是什麼？Marco 先提到 the tradition is changing, but it hasn't disappeared completely，接著說 My uncle in Seville still follows it，因此 it 回指前文的 the tradition（午睡傳統）。"}
+];
+/* ============================================================
+   資料七-3｜篇章結構 2 篇
+   ============================================================ */
+var DISCOURSE = [
+ {title:"篇章結構 1｜Animals' protective strategies",
+  opts:[["A","In addition, these birds are able to spit what's in their stomachs a distance of up to 10 feet."],
+        ["B","While this may be true, these creatures also act like sticks for protection."],
+        ["C","If threatened, a skunk raises its tail and releases an awful smell that is sure to have even the strongest of animals running in the opposite direction."],
+        ["D","Therefore, many of them must adopt strategies to protect themselves."],
+        ["E","Some animals, like lions, hunt in groups to catch large prey like zebras."]],
+  body:"Animals living in the wild often face dangerous situations. __\u2460__ In some cases, these protective actions can seem pretty extreme. The following are a few examples of the lengths some creatures go to for survival.<br><br>"+
+       "Many people think stick insects are thus named simply because they look like sticks. __\u2461__ For example, in windy conditions, they sometimes move like tree branches so that they look more like other parts of their environment.<br><br>"+
+       "Some regions of North America are home to birds known as turkey vultures. These birds feed on dead animals, and to protect themselves from other animals trying to steal their food, they regularly throw up their dinner. __\u2462__ This way, they can make sure that no other animals will want to come close.<br><br>"+
+       "Finally, let's talk about skunks. Although cute and furry in appearance, these animals have a powerful weapon. __\u2463__ The smell of a skunk's spray, one of the best-known protective strategies in the animal kingdom, is so strong that it can be smelled up to 800 meters away!",
+  a:["D","B","A","C"],
+  expl:"答案：\u2460 D　\u2461 B　\u2462 A　\u2463 C<br>\u2460 在 (D) 中有 Therefore，表示是一種因果關係，而前一句提到 dangerous situations，在 (D) 中則提到 protect themselves，就是一種對應的因果關係。<br>\u2461 承接上句 look like sticks，故接 (B) also act like sticks for protection.<br>\u2462 在前一句裡提到了 These birds，而在 (A) 中也提到 these birds，重複使用同樣的片語，以達到兩句之間的主題與句意的連貫性。<br>\u2463 本段的主題句提到 skunks，下一句也提到 a skunk，而在 (C) 裡也有提到 a skunk，可見這幾句的主要談論對象是一致的，在句意方面具有一致性與連貫性。"},
+ {title:"篇章結構 2｜Interesting eating habits",
+  opts:[["A","They sometimes fight with other animals for food."],
+        ["B","First, let's discuss the ostrich, a large bird that lives in Africa."],
+        ["C","It was previously believed that the purpose of this action was simply to clean their food."],
+        ["D","It is because these vultures like to break open ostrich eggs and eat what's inside."],
+        ["E","Here, all the stones the bird has swallowed help to \u201Cchew\u201D its food, much like human teeth do."]],
+  body:"The animal kingdom is full of strange and wonderful creatures, and obviously, the habits of some of these creatures are very different from ours. Today, we will look at several animals with interesting eating habits.<br><br>"+
+       "__\u2460__ In many ways, the ostrich diet seems fairly normal; they eat mostly plants and meat. However, these birds can also be seen eating stones. The reason for this is that they have no teeth. To explain, when an ostrich eats a stone, the stone goes to its second stomach. __\u2461__<br><br>"+
+       "Speaking of ostriches, let's take a look at one of their enemies, a bird known as the Egyptian vulture. Why do ostriches fear Egyptian vultures? __\u2462__ To do this, they also require stones, but instead of eating them, they use them like a hammer to break the eggs.<br><br>"+
+       "Finally, let's leave the birds to talk about an animal far more closely related to us: the snow monkey of Japan. Before eating, these animals, which live in cold places, wash their food in salt water. __\u2463__ However, recent studies have suggested that these monkeys also enjoy the salty flavor. Could snow monkeys perhaps become the Earth's next great chefs? Time will tell.",
+  a:["B","E","D","C"],
+  expl:"答案：\u2460 B　\u2461 E　\u2462 D　\u2463 C<br>\u2460 前一段最後面提到要看看一些有趣的動物飲食習慣，而 (B) 中有 First，符合舉例的方式，而且 (B) 中提到 ostrich，下一句也提到 ostrich，可見是利用字彙的重複使用來達到語意和主題的一致性與連貫性。<br>\u2461 接續上述提到 they have no teeth，故選 (E)，那些吃進去的石頭是為了像人們牙齒一樣幫忙咀嚼食物。<br>\u2462 前面提出了一個問題，而且也提到 ostriches 和 vultures，在 (D) 中則用了 because 來表達因果關係，而且也再度提到了 vultures 和 ostrich，因此在語意和主題上是連貫的。<br>\u2463 前一句提到 wash their food in salt water，而在 (C) 中提到的 this action 就是指這件事，而且 wash 這個動作和 (C) 中的 clean 之間存在著一種因果關係，故為正確答案。"}
+];
+/* ============================================================
+   資料八｜文法選擇（GRAMMAR 15 題）
+   ============================================================ */
+var GRAMMAR = [
+ {q:"The fire was ____________ by the firefighters, and fortunately, no one was injured.", o:["put out","putting out","had put out","to put out"], k:0, e:"被動式句型 S + be + p.p. (+ by + O)...."},
+ {q:"Can you recall ____________?", o:["what happened to your little sister","how did the event happen","when did your mother cook the dinner","where you go this morning"], k:0, e:"本題考 S + V + 名詞子句 (wh- + S + V) 的句型。此句型中的名詞子句要用直述句。where you go this morning 時態有誤，要改成 where you went this morning 才對。"},
+ {q:"The car was already ____________ with gas, so we were ready to begin our road trip across the country.", o:["filled","filling","being filled","being filling"], k:0, e:"被動式句型 S + be + p.p. (+ by + O)...."},
+ {q:"Fiona wants to finish the task without ____________ anyone else for help.", o:["asking","to ask","asks","asked"], k:0, e:"此處考點為 without + V-ing，表「不用、沒有……」，因此答案要選擇動名詞 asking。"},
+ {q:"____________ most teenagers, Alex doesn't love playing mobile games. Instead, he enjoys reading.", o:["To like","Unlike","Liking","Likes"], k:1, e:"由於空格後面是名詞片語，故可推知應該是介系詞，因此答案必須選擇 Unlike，表示「不像；和……不同」。"},
+ {q:"As this museum is quite large, more than 1,000 people can enter it ____________ one time.", o:["by","in","at","for"], k:2, e:"此處考點為 at one time，表「一次」，故介系詞要選擇 at。"},
+ {q:"Feeling the ground suddenly begin to shake, the teacher stayed ____________ and asked all the students to get under their desks.", o:["calmness","calmly","calming","calm"], k:3, e:"stay 為連綴動詞，其後要接形容詞。"},
+ {q:"It was strange that ____________ didn't show up at school that day.", o:["half the class of","class in half","half the class","the class half"], k:2, e:"half (of) N 一半的……。"},
+ {q:"Susan looks ____________ than age. She barely has any wrinkles.", o:["more young","much younger","as young as","any younger"], k:1, e:"程度副詞如 much, far, a lot 等可用來修飾形容詞比較級。"},
+ {q:"____________ Paul caught a bad cold, he decided to take a sick leave.", o:["Due to","With","Because of","Since"], k:3, e:"前後子句之間有因果關係，而且空格後面是一個完整的子句，故必須選擇連接詞，不能使用介系詞，故答案要選擇 Since。"},
+ {q:"Students in the class know Tina often gets perfect scores on exams and ____________ she is also good at dancing.", o:["\u00D7","what","whom","that"], k:3, e:"在 S + V (+ that)...and that + S + V.... 的句型中，第二個引導名詞子句的 that 不可省略，故本題答案要選擇 that。"},
+ {q:"Amy came across one of her friends while she ____________ at one department store last Sunday.", o:["has shopped","was shopping","will shop","shops"], k:1, e:"副詞子句的連接詞是 while，而 while 通常要與進行式連用，表示「在某段時間內持續進行的動作」，故答案要選擇 was shopping；come across sb. 遇見某人。"},
+ {q:"If you want to get better at anything, you must ____________ a lot.", o:["practice","be practicing","have to practice","have practiced"], k:0, e:"must + VR 必須。"},
+ {q:"Dad ____________ his hand on my shoulder to encourage me and show his support.", o:["lied","lain","laid","lay"], k:2, e:"lay（放置）的三態變化為 lay, laid, laid。"},
+ {q:"Stephanie ____________ Paris many times, so she is quite familiar with the city.", o:["has been to","is going to","will go to","had been to"], k:0, e:"由主要子句後面的 many times 可知本句語境為「表達經驗」，而且後面的副詞子句為現在式，因此可推知是表達「到目前為止的經驗」，故要使用現在完成式，故答案要選擇 has been to。"}
+];
+/* ============================================================
+   資料九｜引導式翻譯（GUIDED 5 題）
+   ============================================================ */
+var GUIDED = [
+ {zh:"根據氣象預報，這週末可能會有強烈颱風侵襲北臺灣。",
+  en:"{{1}} {{2}} the weather forecast, a strong typhoon may hit northern Taiwan this weekend.",
+  a:["According","to"],
+  note:"<b>句型：</b>According to + 名詞，置於句首當副詞片語。<br><b>重要片語：</b>according to 根據……；weather forecast 氣象預報。<br><b>時態：</b>推測未來，用 may + VR。"},
+ {zh:"當你在森林步道健行時，你應該要當心有毒蛇出現以免被咬傷。",
+  en:"When you hike on forest trails, you should {{1}} {{2}} {{3}} venomous snakes to avoid getting bitten.",
+  a:["look","out","for"],
+  note:"<b>句型：</b>When + 子句（時間副詞子句）＋主要子句；to V 表目的。<br><b>重要片語：</b>look out for 當心……出現；avoid + V-ing 避免。<br><b>時態：</b>普遍建議，現在簡單式。"},
+ {zh:"臺灣有許多美味的夜市小吃。舉例來說，臭豆腐、珍珠奶茶和炸雞排都很受歡迎。",
+  en:"Taiwan has many delicious night market snacks. {{1}} {{2}}, stinky tofu, bubble tea, and fried chicken cutlets are all very popular.",
+  a:["For","example/instance"],
+  note:"<b>句型：</b>轉承語 For example／For instance 置句首並加逗號。<br><b>重要片語：</b>for example = for instance 舉例來說。<br><b>時態：</b>陳述事實，現在簡單式。"},
+ {zh:"搭乘公車時，記得要抓緊把手才不會跌倒。",
+  en:"When you take the bus, remember to {{1}} {{2}} {{3}} the handle so you won't fall.",
+  a:["hold","on","to"],
+  note:"<b>句型：</b>remember to V 記得要做……（尚未做）；so (that) 引導結果／目的子句。<br><b>重要片語：</b>hold on to 緊緊抓住。<br><b>時態：</b>現在式主句，結果子句用未來式 won't fall。"},
+ {zh:"令人驚訝的是，有些歌手在一場演唱會可以表演長達四小時之久。",
+  en:"It is surprising that some singers can perform for {{1}} {{2}} four hours at a concert.",
+  a:["up","to"],
+  note:"<b>句型：</b>It is + adj. + that 子句（虛主詞句型）。<br><b>重要片語：</b>up to 高達、長達。<br><b>時態：</b>陳述常態能力，現在簡單式 + can。"}
+];
+/* ============================================================
+   資料十｜課文摘要翻譯（SUMMARY 8 題）
+   ============================================================ */
+var SUMMARY = [
+ {zh:"許多人可能會不知道動物的睡眠習慣可以是很令人驚奇的。",
+  ref:"Many people might not know that the sleeping habits of animals can be amazing.",
+  note:"<b>句型：</b>S + V + that 名詞子句當受詞。<br><b>重要單字片語：</b>sleeping habits 睡眠習慣；amazing 令人驚奇的（修飾事物）。<br><b>文法時態：</b>推測用 might not know，子句用 can be。"},
+ {zh:"據報導，有些長頸鹿平均一天只睡三十分鐘。（It is …. that…）",
+  ref:"It is reported that some giraffes sleep only thirty minutes a day on average.",
+  note:"<b>句型：</b>It is reported that + 子句（虛主詞 + 被動）。<br><b>重要單字片語：</b>on average 平均；a day 一天（= per day）。<br><b>文法時態：</b>主句被動現在式 is reported，子句現在簡單式表習慣。"},
+ {zh:"當海獺（sea otter）在水面上睡覺時，牠們手會緊緊牽著以免漂走。",
+  ref:"When sea otters sleep on the water, they hold hands to avoid floating away.",
+  note:"<b>句型：</b>When + 子句；to V 表目的。<br><b>重要單字片語：</b>hold hands 牽手；avoid + V-ing 避免；float away 漂走。<br><b>文法時態：</b>陳述習性，現在簡單式。"},
+ {zh:"海豚一半的大腦入睡，而另一半保持清醒並警戒危險。",
+  ref:"Half of a dolphin's brain sleeps, while the other half stays awake and looks out for danger.",
+  note:"<b>句型：</b>while 表對比「而……」；stay + adj. 連綴動詞。<br><b>重要單字片語：</b>half of 一半的；the other half 另一半；look out for 警戒、當心。<br><b>文法時態：</b>現在簡單式，主詞 Half of...brain 視為單數。"},
+ {zh:"因為牠們特別的睡眠習慣，海豚必須每二十分鐘游到水面一次來呼吸。",
+  ref:"Because of their unique sleeping habits, dolphins must swim to the surface once every twenty minutes to breathe.",
+  note:"<b>句型：</b>Because of + 名詞片語（不可接子句）；to V 表目的。<br><b>重要單字片語：</b>once every twenty minutes 每二十分鐘一次；the surface 水面。<br><b>文法時態：</b>現在簡單式 + must。"},
+ {zh:"有些候鳥（migratory bird）在牠們的長途旅程中會於飛行中吃昆蟲和小睡。",
+  ref:"Some migratory birds eat/consume insects and take naps while in flight during their long journeys.",
+  note:"<b>句型：</b>while in flight 為省略構句（= while they are in flight）。<br><b>重要單字片語：</b>take naps 小睡；in flight 飛行中；during + 名詞。<br><b>文法時態：</b>陳述習性，現在簡單式。"},
+ {zh:"高山雨燕（Alpine swift）能待在空中高達兩百天而不用降落。",
+  ref:"Alpine swifts can stay in the air for up to two hundred days without landing.",
+  note:"<b>句型：</b>without + V-ing 表「不用……」。<br><b>重要單字片語：</b>stay in the air 待在空中；up to 高達。<br><b>文法時態：</b>現在簡單式 + can。"},
+ {zh:"在動物王國中，所有生物都發展出不同的習慣以幫助牠們在野外生存。",
+  ref:"In the animal kingdom, all creatures develop different habits to help them survive in the wild.",
+  note:"<b>句型：</b>help + O + (to) VR；to V 表目的。<br><b>重要單字片語：</b>the animal kingdom 動物王國；survive in the wild 在野外生存。<br><b>文法時態：</b>陳述普遍事實，現在簡單式。"}
+];
+/* ============================================================
+   資料十二｜連貫式翻譯（COHERENT 4 題）
+   ============================================================ */
+var COHERENT = [
+ {tag:"1-1", zh:"許多研究者想知道為什麼學生的閱讀理解力（reading comprehension）在近十年來愈來愈差。",
+  ref:"Many researchers wonder why students' reading comprehension has been getting worse over the past decade.",
+  note:"<b>句型：</b>wonder + why 間接問句（wh- + S + V，用直述句語序）。<br><b>重要單字片語：</b>reading comprehension 閱讀理解力；over the past decade 近十年來；get worse 變差。<br><b>文法時態：</b>與 over the past decade 連用，須用現在完成進行式 has been getting。"},
+ {tag:"1-2", zh:"專家們指出這個問題主要是觀看太多短影音而沒有閱讀長篇文本所導致。",
+  ref:"Experts point out that this problem is mainly caused by watching too many short videos instead of reading long texts.",
+  note:"<b>句型：</b>point out that + 名詞子句；被動 be caused by + 動名詞。<br><b>重要單字片語：</b>point out 指出；instead of + V-ing 而非……。<br><b>文法時態：</b>現在簡單式；被動語態表「被……所導致」。"},
+ {tag:"2-1", zh:"雖然女性在各行各業中的能力與男性一樣好，但他們通常不被認可。",
+  ref:"Although women's abilities are as good as men's in/across various industries, they are often not recognized.　或　Although women are as capable/competent as men (are) in/across various industries, they are often not recognized.",
+  note:"<b>句型：</b>Although 引導讓步子句；as + adj. + as 同級比較。<br><b>重要單字片語：</b>various industries 各行各業；be recognized 被認可。<br><b>文法時態：</b>現在簡單式；主句用被動 are not recognized。"},
+ {tag:"2-2", zh:"為了改善這種情況，愈來愈多公司正在建立更公平的升遷制度。",
+  ref:"To improve this situation, more companies are setting up/establishing fairer promotion systems.",
+  note:"<b>句型：</b>To V 置句首表目的。<br><b>重要單字片語：</b>set up/establish 建立；promotion system 升遷制度；more and more 愈來愈多。<br><b>文法時態：</b>現在進行式 are setting up 表正在發生的趨勢。"}
+];
+/* ============================================================
+   資料六｜🌊 Cause-and-Effect Relationship 因果關係寫作專區
+   ============================================================ */
+var CAUSE_ESSAY = [
+ ["As a result","句首＋逗號的<b>副詞連接語</b>；前句已完整，填 Since／Because of 會結構破裂。"],
+ ["Since","後接<b>完整子句</b>，只能用連接詞；Because of 後不可接子句。"],
+ ["gives rise to","主詞 smoke 需<b>動詞化因果</b>；give rise to ＝ cause，語域高一階。"],
+ ["so","對等連接詞 so 直接連接兩個子句，此處<b>前面不加逗號</b>，與第 5 格「, which is why」的逗號格式明確區隔；若改成逗號＋therefore 則會造成 comma splice。"],
+ ["which is why","關係子句引導結果，把前句整件事當先行詞，書面感高。"],
+ ["thus","<b>分詞構句</b>「, thus V-ing」＝因而造成……，高分作文收尾手法。"],
+ ["Because of","後接<b>名詞組</b> these problems，必須用介系詞片語。"],
+ ["Thanks to","因果介系詞中唯一帶<b>正面評價</b>；此處講好處，色彩須正向。"],
+ ["However","轉折樞紐，標記由「讓步」轉向「批評」。"],
+ ["if","條件式因果，語氣比 because 弱，適合談尚未發生的後果。"],
+ ["then","條件式因果，語氣比 because 弱，適合談尚未發生的後果。"],
+ ["Therefore","導出結論，是<b>定調句</b>的標記詞。"],
+ ["in order to","表<b>目的</b>的因果變體：目的＝未來的果。"]
+];
+var CAUSE_DISTRACTORS = ["For example","In addition","Although"];
+var CAUSE_UNITS = {
+ "1":{title:"① 應用字彙 Word Bank", tts:true, items:[
+   ["【碎屑；殘骸（n. 不可數）】","debris"],
+   ["【刺鼻的（adj. 形容氣味）】","pungent"],
+   ["【震耳欲聾的（adj.）】","deafening"],
+   ["【灰濛濛的、視線模糊的（adj.）】","hazy"],
+   ["【使受驚嚇（vt. 及物）】","startle"],
+   ["【散落、四散（v. 常用被動）】","scatter"],
+   ["【重要性勝過、超過（vt. 不加 than）】","outweigh"],
+   ["【（負面的）後果（n.）】","consequence"]],
+  expl:"1. <b>debris</b>（<b>名詞</b>，不可數）碎屑、殘骸；不加 s。常見<b>名詞片語搭配</b>：piles of debris（一堆殘骸）、<b>be covered in debris</b>（被動＋介系詞片語）。<br>2. <b>pungent</b>（<b>形容詞</b>）刺鼻的，專指氣味，不可形容聲音。常見<b>形容詞＋名詞</b>搭配：a pungent smell／odor。<br>3. <b>deafening</b>（<b>形容詞</b>，由現在分詞轉品）震耳欲聾的，語氣強過 loud。搭配：deafening bangs／noise／silence（震耳欲聾的寂靜，屬 oxymoron 矛盾修辭）。<br>4. <b>hazy</b>（<b>形容詞</b>）灰濛濛的、視線模糊的；引申為 a hazy memory（模糊的記憶）。<br>5. <b>startle</b>（<b>及物動詞 vt.</b>）使受驚嚇。正：The noise startled the dog.；誤：The dog startled.（若要表達「人受驚」須用被動 be startled by）。<br>6. <b>scatter</b>（<b>動詞 v.</b>，常用被動）散落、四散。<b>動詞片語＋介系詞</b>：be scattered <b>across</b>／<b>around</b>／<b>over</b>。<br>7. <b>outweigh</b>（<b>及物動詞 vt.</b>）重要性勝過。本身已含比較概念，後面<b>不加 than</b>：The benefits outweigh the costs.<br>8. <b>consequence</b>（<b>名詞 n.</b>）多指<b>負面</b>後果；中性請用 result／outcome。常見搭配：<b>as a consequence of</b>（介系詞片語，＝because of）、suffer the consequences（動詞片語）。"},
+ "2":{title:"② 慣用語與片語 Word Bank", tts:true, items:[
+   ["【點燃、引爆／出發／觸發】","set off"],
+   ["【驅除、擋掉（邪靈、疾病）】","ward off"],
+   ["【引發、導致（＝cause，語域較高）】","give rise to"],
+   ["【源自於（後面接「原因」）】","stem from"],
+   ["【雙面刃（利弊同時並存）】","a double-edged sword"],
+   ["【在……之間取得平衡（＋between）】","strike a balance"]],
+  expl:"1. <b>set off</b>（<b>動詞片語 v. phr.</b>，可分離：set it off）一詞多義：點燃／出發／觸發。核心概念都是「<b>使靜止的過程啟動</b>」；「觸發警報」本身即因果動詞，可與 trigger 互換。<br>2. <b>ward off</b>（<b>動詞片語 v. phr.</b>，及物）驅除、擋掉，後接負面事物：ward off evil spirits／disease／criticism。<br>3. <b>give rise to</b>（<b>動詞片語 v. phr.</b>＝v.＋n.＋prep.，後接名詞）引發、導致，語域高於 cause。<br>4. <b>stem from</b>（<b>動詞片語 v. phr.</b>，後接名詞）源自於。與 give rise to 因果方向<b>相反</b>：A gives rise to B（A 為因）／A stems from B（A 為果）。<br>5. <b>a double-edged sword</b>（<b>名詞片語 n. phr.</b>，常作主詞補語：is a double-edged sword）雙面刃，指利弊<b>同時</b>存在；<i>a blessing in disguise</i> 是「<b>先壞後好</b>」的時間翻轉，兩者不可互換。<br>6. <b>strike a balance</b>（<b>動詞片語 v. phr.</b>＝v.＋n.）取得平衡，固定接<b>介系詞片語</b> between A and B，介系詞是 between，不是 of。"},
+ "3":{title:"③ 認識字彙 Word Bank", tts:true, items:[
+   ["【環境衛生（n.）例：___ worker 清潔隊員】","sanitation"],
+   ["【空氣傳播的、懸浮於空中的（adj.）】","airborne"],
+   ["【微粒（n.）例：fine ___s ＝ PM2.5】","particle"],
+   ["【潛在的危害、隱患（n.）例：fire ___】","hazard"],
+   ["【替代方案（n.）例：eco-friendly ___s】","alternative"],
+   ["【意識、覺察（n.）例：environmental ___】","consciousness"]],
+  expl:"1. <b>sanitation</b>（<b>名詞 n.</b>）環境衛生，常作<b>名詞修飾語</b>：sanitation worker（清潔隊員）；不等於形容詞 sanitary（衛生的）。<br>2. <b>airborne</b>（<b>形容詞 adj.</b>）＝air＋borne（被承載的），空氣傳播的；同構詞：waterborne、foodborne。<br>3. <b>particle</b>（<b>名詞 n.</b>）微粒。環境議題固定<b>形容詞＋名詞</b>搭配：fine／airborne particles＝PM2.5。<br>4. <b>hazard</b>（<b>名詞 n.</b>）潛在的危害，尚未發生；danger 是眼前的危險。固定用法：a fire hazard、a health hazard、<b>pose a hazard to</b>（動詞片語＋介系詞）。<br>5. <b>alternative</b>（<b>名詞 n.</b>／<b>形容詞 adj.</b>）名詞常搭 eco-friendly alternatives、<b>an alternative to</b>（＋介系詞 to）；形容詞如 alternative energy。<br>6. <b>consciousness</b>（<b>名詞 n.</b>）意識、覺察；environmental consciousness＝環保意識，另有 raise public consciousness（動詞片語）。"},
+ "4":{title:"④ 文法・句型・搭配詞・轉承詞 Word Bank", tts:false, items:[
+   ["【基礎】對……造成損害（v.＋n.＋prep.）","cause damage to"],
+   ["【基礎】對……有影響（v.＋n.＋prep.）","have an impact on"],
+   ["【基礎】應為……負責（be＋adj.＋prep.）","be responsible for"],
+   ["【基礎】是……的原因之一（語氣較弱的 hedging）","contribute to"],
+   ["【進階】被歸因於……（被動、去人稱化）","be attributed to"],
+   ["【進階】對……構成威脅（v.＋n.＋prep.）","pose a threat to"],
+   ["【進階】引發連鎖反應（v.＋n.）","trigger a chain reaction"],
+   ["【轉承】由於……（後接名詞）","owing to"],
+   ["【轉承】因此（前須句號或分號）","consequently"],
+   ["【轉承】藉此、因而（後接 V-ing）","thereby"]],
+  expl:"本區十個項目請先判斷<b>詞性與後接結構</b>，再決定能放在句子的哪個位置。<br>1. <b>cause damage to</b>（<b>動詞片語 v. phr.</b>＝v.＋n.＋prep.，後接名詞）對……造成損害。<br>2. <b>have an impact on</b>（<b>動詞片語 v. phr.</b>＝v.＋n.＋prep.，後接名詞）對……有影響。<br>3. <b>be responsible for</b>（<b>形容詞片語 adj. phr.</b>＝be＋adj.＋prep.，後接名詞或動名詞）應為……負責。<br>4. <b>contribute to</b>（<b>動詞片語 v. phr.</b>，後接名詞或動名詞）是……的原因之一，語氣較弱，是最安全的 hedging 用法。<br>5. <b>be attributed to</b>（<b>被動動詞片語 v. phr.</b>，後接名詞）被歸因於，把因果判斷「去人稱化」，是學術英文最典型的寫法：The rise <b>can be attributed to</b> marketing.<br>6. <b>pose a threat to</b>（<b>動詞片語 v. phr.</b>＝v.＋n.＋prep.，後接名詞）對……構成威脅。<br>7. <b>trigger a chain reaction</b>（<b>動詞片語 v. phr.</b>＝v.＋n.）引發連鎖反應，適合寫環境議題的多層後果。<br>8. <b>owing to</b>（<b>介系詞片語 prep. phr.</b>，後接名詞或動名詞）由於……，不可接完整子句。<br>9. <b>consequently</b>（<b>連接副詞 conj. adv.</b>，作副詞使用）因此，前須句號或分號，否則造成 comma splice。<br>10. <b>thereby</b>（<b>副詞 adv.</b>，後接 V-ing，形成分詞構句）藉此、因而。<br>1./2./6. 介系詞固定（to／on／to），背搭配詞務必<b>連介系詞一起背</b>。8./9./10. 三者分屬②介系詞片語、③副詞連接語、⑥分詞構句，混用即扣分。"}
+};
+
+/* ============================================================
+   頁籤一：💡 例句填空
+   ============================================================ */
+function buildFill(){
+  var root=document.getElementById('p-fill');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '💡 <b>例句填空</b>：本頁共三個子單元，題目<b>每次進入頁面都會隨機重新排列</b>並重新編號。<br>'+
+    '📌 每題作答完畢，按壓「✅ 檢查」即可進入此單元互動學習總分之累計。'));
+
+  root.appendChild(secTitle('單元 1｜單字搭配詞（'+VOCAB.length+' 題）'));
+  shuffle(VOCAB).forEach(function(item,i){
+    var st={locked:false};
+    var c=el('div','card'); c.appendChild(el('div','num',String(i+1)));
+    var inp=el('input','blank w2'); inp.type='text'; inp.setAttribute('placeholder',item.h);
+    inp.setAttribute('autocapitalize','off'); inp.setAttribute('autocomplete','off');
+    var line=el('div','qen'); var parts=item.s.split('{{B}}');
+    line.appendChild(document.createTextNode(parts[0])); line.appendChild(inp);
+    line.appendChild(document.createTextNode(parts[1]||''));
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    rv.innerHTML='<div class="ansline">📖 參考解答：<b>'+item.a+'</b></div><div class="expl">完整句：'+esc(item.s.replace('{{B}}',item.a))+'</div>'+(item.note?'<div class="expl">'+item.note+'</div>':'');
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){var ok=eqWord(inp.value,item.a);inp.className='blank w2 '+(ok?'ok':'no');
+      grade(st,ok,fb,'✅ 正確！ +200 分','🍬 再想想這個字的字首字尾，−50 分。');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(rv); root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('單元 2｜慣用語與片語（'+IDIOMS.length+' 題）'));
+  shuffle(IDIOMS).forEach(function(item,i){
+    var st={locked:false}, inputs=[];
+    var c=el('div','card'); c.appendChild(el('div','num',String(i+1)));
+    c.appendChild(el('div','zh','📝 '+item.zh));
+    var line=el('div','qen'); var segs=item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){var ip=el('input','blank w1');ip.type='text';
+        ip.setAttribute('autocapitalize','off');ip.setAttribute('autocomplete','off');
+        inputs.push(ip);line.appendChild(ip);}
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    var full=buildBlankSentence(item.en,function(n){return item.a[n-1].split('/')[0];});
+    var ansHtml=item.a.map(function(x,k){
+      return '<div style="margin:6px 0"><b>('+(k+1)+')</b><br>'+
+        x.split('/').map(function(y){return '　<b>'+esc(y.trim())+'</b>';}).join('<br>')+'</div>';
+    }).join('');
+    rv.innerHTML='<div class="ansline">📖 參考解答（同一格若有多種寫法，任一種皆可）</div>'+ansHtml+
+      '<div class="expl">'+esc(full)+'</div>'+(item.note?'<div class="expl">'+item.note+'</div>':'');
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){var ok=true;
+      inputs.forEach(function(ip,k){var g=eqWord(ip.value,item.a[k]);ip.className='blank w1 '+(g?'ok':'no');if(!g)ok=false;});
+      grade(st,ok,fb,'✅ 片語完全正確！ +200 分','🍬 片語還沒完全對，−50 分。');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(rv); root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('單元 3｜例句重要搭配詞 Guided Translation（'+COLLOC.length+' 題）'));
+  root.appendChild(el('div','intro','※ 每格可能不只一字'));
+  shuffle(COLLOC).forEach(function(item,i){
+    var st={locked:false}, inputs=[];
+    var c=el('div','card'); c.appendChild(el('div','num',String(i+1)));
+    c.appendChild(el('div','zh','📝 '+item.zh));
+    var line=el('div','qen'); var segs=item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){var ip=el('input','blank w3');ip.type='text';
+        ip.setAttribute('autocapitalize','off');ip.setAttribute('autocomplete','off');
+        inputs.push(ip);line.appendChild(ip);}
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    var full=buildBlankSentence(item.en,function(n){return item.a[n-1].split('/')[0];});
+    var ansHtml=item.a.map(function(x,k){
+      return '<div style="margin:6px 0"><b>('+(k+1)+')</b><br>'+
+        x.split('/').map(function(y){return '　<b>'+esc(y.trim())+'</b>';}).join('<br>')+'</div>';
+    }).join('');
+    rv.innerHTML='<div class="ansline">📖 參考解答（同一格若有多種寫法，任一種皆可）</div>'+ansHtml+
+      '<div class="expl">'+esc(full)+'</div>';
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){var ok=true;
+      inputs.forEach(function(ip,k){var g=eqWord(ip.value,item.a[k]);ip.className='blank w3 '+(g?'ok':'no');if(!g)ok=false;});
+      grade(st,ok,fb,'✅ 搭配詞完全正確！ +200 分','🍬 搭配詞還沒完全對，−50 分。');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(rv); root.appendChild(c);
+  });
+}
+/* ============================================================
+   頁籤二：🗺️ 課文尋寶闖關（逐段解鎖）
+   ============================================================ */
+function buildHunt(){
+  var root=document.getElementById('p-hunt');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🗺️ <b>課文尋寶闖關 Reading Fill-in（6 段・逐段解鎖）</b><br>'+
+    '初始只有 Paragraph 1 可作答。按下「✅ 檢查本段答案」或「📖 參考解答」任一個，都會自動解鎖下一段。<br>'+
+    '📌 每段作答完畢，按壓「✅ 檢查本段答案」即可進入此單元互動學習總分之累計。'));
+  var paras=[];
+  READING.forEach(function(p,idx){
+    var st={locked:false}, inputs={};
+    var c=el('div','card para'); if(idx>0)c.classList.add('lock');
+    c.appendChild(el('div','num','📖 '+p.n));
+    var line=el('div','qen');
+    var segs=p.en.split(/\{\{\d+\}\}/g);
+    var nums=(p.en.match(/\{\{(\d+)\}\}/g)||[]).map(function(m){return parseInt(m.replace(/\D/g,''),10);});
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){var n=nums[k];var ip=el('input','blank w1');ip.type='text';
+        ip.setAttribute('placeholder','('+n+')');
+        ip.setAttribute('autocapitalize','off');ip.setAttribute('autocomplete','off');
+        inputs[n]=ip;line.appendChild(ip);}
+    });
+    c.appendChild(line);
+    c.appendChild(el('div','zh','📝 '+p.zh));
+    c.appendChild(el('div','lockhint','🔒 完成上一段後即可解鎖本段'));
+    var fb=fbBox(), rv=makeReveal();
+    var full=buildBlankSentence(p.en,function(n){return p.a[n];});
+    var alist=Object.keys(p.a).map(function(n){return n+'. '+p.a[n];}).join('　');
+    rv.innerHTML='<div class="ansline">📖 參考解答（Paragraph '+p.n+'）：'+alist+'</div><div class="expl">'+esc(full)+'</div>';
+    function unlockNext(){if(paras[idx+1])paras[idx+1].classList.remove('lock');}
+    var chk=el('button','btn chk','✅ 檢查本段答案');
+    chk.onclick=function(){var ok=true;
+      Object.keys(inputs).forEach(function(n){var g=eqWord(inputs[n].value,p.a[n]);inputs[n].className='blank w1 '+(g?'ok':'no');if(!g)ok=false;});
+      grade(st,ok,fb,'✅ 本段全部正確！ +200 分','🍬 本段還有空格沒填對，−50 分。'); unlockNext();};
+    var rb=revealBtn(rv); rb.addEventListener('click',unlockNext);
+    c.appendChild(chk); c.appendChild(rb);
+    var sb=el('button','btn say','🔊'); sb.onclick=function(){say(full);};
+    c.appendChild(sb); c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c); paras.push(c);
+  });
+}
+/* ============================================================
+   頁籤三：🧩 混合題 & 篇章結構（摘要大富翁）
+   ============================================================ */
+function mcCard(host,idx,item,onGraded,badge){
+  var st={locked:false,onDone:onGraded,onTouch:onGraded};
+  var c=el('div','card'); c.appendChild(el('div','num',badge||String(idx+1)));
+  c.appendChild(el('div','qen','<b>'+esc(item.q)+'</b>'));
+  c.appendChild(el('div','note','👉 直接按壓選項內容作答。'));
+  var box=el('div','mc'),btns=[],sel=-1;
+  item.o.forEach(function(o,i){
+    var b=el('button','mcopt','('+'ABCD'[i]+') '+esc(o));
+    b.onclick=function(){btns.forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');sel=i;};
+    btns.push(b);box.appendChild(b);
+  });
+  c.appendChild(box);
+  var fb=fbBox(),rv=makeReveal();
+  rv.innerHTML='<div class="ansline">📖 參考解答：('+'ABCD'[item.k]+') '+esc(item.o[item.k])+'</div><div class="expl"><b>【答案與詳解】</b><br>'+item.e+'</div>';
+  var chk=el('button','btn chk','✅ 檢查');
+  chk.onclick=function(){
+    if(sel<0){toast('請先選一個答案喔！',false);return;}
+    btns.forEach(function(b,i){b.classList.remove('sel');if(i===item.k)b.classList.add('ok');else if(i===sel)b.classList.add('no');});
+    grade(st,sel===item.k,fb,'✅ 正確！ +200 分','🍬 這題錯了，−50 分。');
+  };
+  c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+  host.appendChild(c);
+}
+function renderMixItem(root,item,idx,onGraded){
+  var st={locked:false,onDone:onGraded,onTouch:onGraded};
+  var c=el('div','card'); c.appendChild(el('div','num',String(idx+1)));
+  c.appendChild(el('div','qen',item.q));
+  if(item.type==='fill'){
+    var inputs=[]; var line=el('div','qen'); line.style.marginTop='8px';
+    var segs=item.stem.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){var ip=el('input','blank w2');ip.type='text';
+        ip.setAttribute('autocapitalize','off');ip.setAttribute('autocomplete','off');
+        inputs.push(ip);line.appendChild(ip);}
+    });
+    c.appendChild(line);
+    var fb=fbBox(),rv=makeReveal();
+    rv.innerHTML='<div class="ansline">📖 參考解答：\u2460 <b>'+item.a[0]+'</b>　\u2461 <b>'+item.a[1]+'</b></div><div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>';
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){var ok=true;
+      inputs.forEach(function(ip,k){var g=eqWord(ip.value,item.a[k]);ip.className='blank w2 '+(g?'ok':'no');if(!g)ok=false;});
+      grade(st,ok,fb,'✅ 兩格都正確！ +200 分','🍬 字形變化再確認一次，−50 分。');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+  }else if(item.type==='press'){
+    var fb2=fbBox(),rv2=makeReveal();
+    var labels=[]; for(var i=0;i<item.slots;i++)labels.push(String(i+1));
+    c.appendChild(el('div','note','👉 直接按壓下方選項內容作答；按壓題號旁的空格，剛才選擇的選項即回到原來的選項內。'));
+    var press=makePress(c,item.opts,item.a,labels,false);
+    rv2.innerHTML='<div class="ansline">📖 參考解答：<b>'+item.a.join('')+'</b></div><div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>';
+    var chk2=el('button','btn chk','✅ 檢查');
+    chk2.onclick=function(){var ok=press.check();if(ok===null)return;
+      grade(st,ok,fb2,'✅ 完全正確！ +200 分','🍬 有選項不符合文章內容喔，−50 分。');};
+    c.appendChild(chk2); c.appendChild(revealBtn(rv2)); c.appendChild(fb2); c.appendChild(rv2);
+  }else{ makeShort(c,item,st); }
+  root.appendChild(c);
+}
+function renderClozeInline(stage,passage,items,mark){
+  var pc=el('div','card blue');
+  pc.appendChild(el('div','note','👉 直接<b>按壓文章中的題號</b>（例如 (1)），該處會就地展開下拉式選項；選好後按下方各題的「✅ 檢查」批改。'));
+  var body=el('div','qen'); var picks={};
+  var parts=passage.split(/__\((\d+)\)__/g);
+  parts.forEach(function(seg,i){
+    if(i%2===0){ body.appendChild(el('span','',seg)); }
+    else{
+      var n=parseInt(seg,10), it=items[n-1];
+      var holder=el('span'); holder.style.whiteSpace='nowrap';
+      var badge=el('button','btn mini','('+n+')'); badge.style.margin='0 3px';
+      var sel=document.createElement('select'); sel.className='blank w2'; sel.style.display='none';
+      sel.innerHTML='<option value="-1">— 請選擇 —</option>'+it.o.map(function(o,k){return '<option value="'+k+'">('+'ABCD'[k]+') '+esc(o)+'</option>';}).join('');
+      sel.onchange=function(){picks[n]=parseInt(sel.value,10);badge.textContent=(picks[n]>=0)?('('+n+') '+'ABCD'[picks[n]]):('('+n+')');};
+      badge.onclick=function(){sel.style.display=(sel.style.display==='none'?'inline-block':'none');};
+      picks[n]=-1; holder.appendChild(badge); holder.appendChild(sel); body.appendChild(holder);
+    }
+  });
+  pc.appendChild(body);
+  pc.appendChild(sayBtn(passage.replace(/<[^>]+>/g,' ').replace(/__\(\d+\)__/g,' blank ')));
+  stage.appendChild(pc);
+  items.forEach(function(it,i){
+    var n=i+1; var st={locked:false,onDone:mark(i),onTouch:mark(i)};
+    var c=el('div','card'); c.appendChild(el('div','num',String(n)));
+    c.appendChild(el('div','qen','<b>'+esc(it.q)+'</b> Choose the best answer for blank '+esc(it.q)+' in the passage above.'));
+    c.appendChild(el('div','note','👉 請到上方文章按壓題號 '+it.q+' 選擇答案，再按「✅ 檢查」。'));
+    var fb=fbBox(),rv=makeReveal();
+    rv.innerHTML='<div class="ansline">📖 參考解答：('+'ABCD'[it.k]+') '+esc(it.o[it.k])+'</div><div class="expl"><b>【答案與詳解】</b><br>'+it.e+'</div>';
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){
+      if(picks[n]===undefined||picks[n]<0){toast('請先在上方文章的題號 '+it.q+' 選擇答案喔！',false);return;}
+      grade(st,picks[n]===it.k,fb,'✅ 正確！ +200 分','🍬 這題錯了，−50 分。');
+    };
+    var jump=el('button','btn','🔍 回到文章題號 '+it.q);
+    jump.onclick=function(){try{pc.scrollIntoView({behavior:'smooth',block:'center'});}catch(e){}};
+    c.appendChild(chk); c.appendChild(jump); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(rv); stage.appendChild(c);
+  });
+}
+function renderDiscourse(stage,p,onGraded){
+  var st={locked:false,onDone:onGraded,onTouch:onGraded};
+  var c=el('div','card'); c.appendChild(el('div','num','📘'));
+  c.appendChild(el('div','sub-title','【'+p.title+'】'));
+  c.appendChild(el('div','note','👉 直接按壓下方選項內容作答；按壓題號旁的空格，剛才選擇的選項即回到原來的選項內。'));
+  var press=makePress(c,p.opts,p.a,['\u2460','\u2461','\u2462','\u2463'],true);
+  c.appendChild(el('div','qen',p.body));
+  var fb=fbBox(),rv=makeReveal();
+  rv.innerHTML='<div class="ansline">📖 參考解答：\u2460 '+p.a[0]+'　\u2461 '+p.a[1]+'　\u2462 '+p.a[2]+'　\u2463 '+p.a[3]+'</div><div class="expl"><b>【答案與詳解】</b><br>'+p.expl+'</div>';
+  var chk=el('button','btn chk','✅ 檢查');
+  chk.onclick=function(){var ok=press.check();if(ok===null)return;
+    grade(st,ok,fb,'✅ 四格全對！ +200 分','🍬 順序或選項有誤，−50 分。');};
+  c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+  stage.appendChild(c);
+}
+var PRACTICES=[
+ {id:'c1',label:'綜合測驗 1｜Sleeping Bats'},
+ {id:'c2',label:'綜合測驗 2｜Cheetahs'},
+ {id:'c3',label:'綜合測驗 3｜Underwater Hotels & Logging'},
+ {id:'c4',label:'綜合測驗 4｜Are Pandas Really Herbivores?'},
+ {id:'m1',label:'混合題 1｜Randy Gardner\u2019s Sleep Experiment'},
+ {id:'m2',label:'混合題 2｜Siesta Culture in Spain'},
+ {id:'d1',label:'篇章結構 1｜Animals\u2019 protective strategies'},
+ {id:'d2',label:'篇章結構 2｜Interesting eating habits'}
+];
+var DONE_SET={};
+function renderPractice(stage,id,refresh){
+  stage.innerHTML=''; var touched={},need=0;
+  function mark(k){return function(){touched[k]=1;if(Object.keys(touched).length>=need){DONE_SET[id]=1;refresh();}};}
+  var map={c1:[CLOZE1_PASSAGE,CLOZE1],c2:[CLOZE2_PASSAGE,CLOZE2],c3:[CLOZE3_PASSAGE,CLOZE3],c4:[CLOZE4_PASSAGE,CLOZE4]};
+  var lab=''; PRACTICES.forEach(function(p){if(p.id===id)lab=p.label;});
+  if(map[id]){
+    need=map[id][1].length;
+    stage.appendChild(el('div','sub-title','【'+lab+'】'));
+    renderClozeInline(stage,map[id][0],map[id][1],mark);
+  }else if(id==='m1'||id==='m2'){
+    var mpas=(id==='m1')?MIX1_PASSAGE:MIX2_PASSAGE, mit=(id==='m1')?MIX1:MIX2;
+    need=mit.length;
+    stage.appendChild(el('div','sub-title','【'+lab+'】'));
+    var pc2=el('div','card blue'); pc2.appendChild(el('div','qen',mpas));
+    pc2.appendChild(sayBtn(mpas.replace(/<[^>]+>/g,' '))); stage.appendChild(pc2);
+    mit.forEach(function(it,i){renderMixItem(stage,it,i,mark(i));});
+  }else{
+    need=1; renderDiscourse(stage,(id==='d1')?DISCOURSE[0]:DISCOURSE[1],mark(0));
+  }
+  try{stage.scrollIntoView({behavior:'smooth',block:'nearest'});}catch(e){}
+}
+var BOARD=[
+ {t:'🏁',n:'Start'},{t:'📘',n:'抽一篇\n練習'},{t:'🟥',n:'Grammar\nChallenge'},{t:'🟦',n:'Sleep\nFact'},
+ {t:'📘',n:'抽一篇\n練習'},{t:'⭐',n:'Bonus'},{t:'🟥',n:'Grammar\nChallenge'},{t:'📘',n:'抽一篇\n練習'},
+ {t:'🟦',n:'Sleep\nFact'},{t:'⭐',n:'Bonus'},{t:'🟥',n:'Grammar\nChallenge'},{t:'🎯',n:'Sleep\nStudio'}
+];
+var FACT_CARDS=[
+ '🟦 <b>Sleep Fact</b>：課文第二段說 it is reported that some giraffes sleep only thirty minutes a day on average——長頸鹿一天平均只睡三十分鐘，而且從不睡太久，因為 there are often predators around。',
+ '🟦 <b>Sleep Fact</b>：海豚睡覺時 only half their brain is asleep at a time，另一半必須 stay awake to help them swim, breathe, and be on the lookout for danger。',
+ '🟦 <b>Sleep Fact</b>：高山雨燕 may be able to stay in the air for up to two hundred days without needing to land——邊飛邊睡是為了避免落地後 be caught by wild animals。'
+];
+var BONUS_CARDS=[
+ '⭐ <b>Bonus</b>：抽考句型！請用 <b>It is reported that...</b> 造一個關於動物睡眠的句子，說給組員聽。',
+ '⭐ <b>Bonus</b>：抽考句型！請用 <b>be on the lookout for</b> 與 <b>look out for</b> 各造一句，並說明兩者的詞性差異。',
+ '⭐ <b>Bonus</b>：抽考句型！請用間接問句 <b>wonder how / why + S + V</b> 造一句關於動物的問題。'
+];
+function renderChallengeMC(stage){
+  var g=GRAMMAR[Math.floor(Math.random()*GRAMMAR.length)];
+  mcCard(stage,0,{q:'Grammar Challenge：'+g.q,o:g.o,k:g.k,e:g.e},null,'🟥');
+}
+function buildMixed(){
+  var root=document.getElementById('p-mixed');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🧩 <b>綜合測驗 · 混合題 · 篇章結構｜摘要大富翁闖關</b><br>'+
+    '本單元共 <b>8 篇</b>練習（綜合測驗 4 篇、混合題 2 篇、篇章結構 2 篇）。擲骰子前進，停在 <b>📘</b> 格就<b>隨機抽出一篇尚未完成</b>的練習。<br>'+
+    '<b>8 篇全部練習完畢，才算完成此單元。</b><br>'+
+    '📌 每題作答完畢，按壓「✅ 檢查」即可進入此單元互動學習總分之累計。'));
+  var wrap=el('div','card');
+  var dice=el('div','dice','🎲'), pos=0;
+  var board=el('div','board');
+  var cells=BOARD.map(function(b,i){
+    var d=el('div','cellx',b.t+'<br>'+b.n.replace('\n','<br>'));
+    d.style.background=b.t==='📘'?'var(--purple)':b.t==='🟥'?'#FEE2E2':b.t==='🟦'?'var(--sky)':b.t==='⭐'?'var(--gold)':'var(--mint)';
+    if(i===0)d.classList.add('here'); board.appendChild(d); return d;
+  });
+  var stage=el('div'), status=el('div','fb on ok'), listBox=el('div','pillrow');
+  function refresh(){
+    var n=Object.keys(DONE_SET).length;
+    status.innerHTML=n>=8?'🏆 恭喜通關！8 篇練習全部完成 ✅':('🎯 目前進度：已完成 '+n+' / 8 篇。停在 📘 格即可抽出下一篇！');
+    listBox.innerHTML='';
+    PRACTICES.forEach(function(p){listBox.appendChild(el('span','pill',(DONE_SET[p.id]?'✅ ':'⬜ ')+p.label));});
+  }
+  var roll=el('button','btn chk','🎲 擲骰子前進');
+  roll.onclick=function(){
+    dice.classList.add('rolling');
+    var n=1+Math.floor(Math.random()*6);
+    setTimeout(function(){
+      dice.classList.remove('rolling');
+      dice.textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][n-1];
+      cells[pos].classList.remove('here'); pos=(pos+n)%BOARD.length; cells[pos].classList.add('here');
+      var b=BOARD[pos]; stage.innerHTML='';
+      if(b.t==='📘'){
+        var pool=PRACTICES.filter(function(p){return !DONE_SET[p.id];});
+        if(!pool.length){stage.appendChild(el('div','fb on ok','🏆 8 篇練習都完成了！你已通關本單元。'));return;}
+        renderPractice(stage,pool[Math.floor(Math.random()*pool.length)].id,refresh);
+      }else if(b.t==='🟥'){renderChallengeMC(stage);}
+      else if(b.t==='🟦'){stage.appendChild(el('div','fb on ok',pick(FACT_CARDS)));}
+      else if(b.t==='⭐'){stage.appendChild(el('div','fb on ok',pick(BONUS_CARDS)));}
+      else if(b.t==='🎯'){stage.appendChild(el('div','fb on ok','🎯 <b>Sleep Studio</b>：用你讀過的所有篇章，說（或寫）出一段「不同動物如何用不同睡眠方式避開危險」的完整說明吧！'));}
+      else{stage.appendChild(el('div','fb on ok','🏁 回到起點，重新出發！'));}
+    },620);
+  };
+  wrap.appendChild(board); wrap.appendChild(dice); wrap.appendChild(roll);
+  wrap.appendChild(status); wrap.appendChild(listBox); wrap.appendChild(stage);
+  root.appendChild(wrap); refresh();
+  root.appendChild(secTitle('📌 也可以直接選一篇練習'));
+  var picker=el('div','card');
+  PRACTICES.forEach(function(p){
+    var b=el('button','btn','📘 '+p.label);
+    b.onclick=function(){renderPractice(stage,p.id,refresh);try{wrap.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}};
+    picker.appendChild(b);
+  });
+  root.appendChild(picker);
+}
+/* ============================================================
+   AI 老師（前端啟發式批改，離線可用）
+   ============================================================ */
+function callAI(){ return Promise.reject(new Error('offline')); }
+function aiGrade(userText,item,host,st){
+  var v=(userText||'').trim(), box=host.querySelector('.aiout');
+  box.classList.add('on');
+  if(!v){box.innerHTML='<b>🤖 AI 老師：</b>先寫下你的英文翻譯吧！寫錯沒關係，老師最喜歡陪學生一起修改了 💛';return;}
+  var ref=item.ref, fixed=autofix(v), cov=coverage(v,ref);
+  var ratio=tokens(v).length/Math.max(1,tokens(ref).length);
+  var perfect=(norm(v)===norm(ref))||(cov>=0.999&&ratio>=0.8&&ratio<=1.25);
+  if(perfect){
+    if(!st.locked){st.locked=true;addScore(200);}
+    celebrate();
+    box.innerHTML='<div class="ansline">🤖 AI 老師熱情點評：完美！</div><div class="expl">'+
+      '<b>【你的回答】</b>：'+esc(v)+'<br><b>【標準參考】</b>：'+esc(ref)+'<br>'+
+      '<b>【老師的分析與建議】</b>：句型、單字、時態、標點全部到位，完全達到大考中心評分標準的滿分水準！<br>'+
+      '<b>【獲得分數】</b>：4／4　🌟 4／4 明日之星！<br><br>'+
+      '哇！同學，你真的太厲害了！！這一題完全命中重點，老師看到超級開心，你就是老師最驕傲的學生之一！💪🌟</div>';
+    return;
+  }
+  addScore(-50);
+  var tier,advice;
+  if(cov>=0.85){tier='表現尚可';advice='你的內容幾乎全中了！剩下的是<b>細節打磨</b>：檢查冠詞（a/an/the）、單複數、介系詞，以及句尾標點。再把中文句子的每一個訊息點對照一次英文，確認沒有漏掉修飾語（例如「平均」「長達」「每二十分鐘」這類片語）。';}
+  else if(cov>=0.5){tier='表現尚可';advice='主要句型抓到了，但<b>關鍵單字或片語</b>還有缺漏。建議先把中文拆成「主詞／動詞／受詞／修飾語」四塊，再逐塊翻譯，最後檢查時態是否與情境相符。';}
+  else{tier='需要努力';advice='先別急著寫整句！建議三步驟：① 圈出中文的<b>主要動詞</b>；② 決定<b>句型結構</b>（是 It is reported that…？是 while 對比？還是 without + V-ing？）；③ 再把關鍵字彙一個一個填進去。回去看看本題的「句型說明」，會很有幫助喔！';}
+  var score=cov>=0.85?3:cov>=0.6?2.5:cov>=0.4?1.5:0.5;
+  box.innerHTML='<div class="ansline">🤖 AI 老師熱情點評：'+tier+'（本題 −50 分，訂正後再挑戰一次！）</div><div class="expl">'+
+    '<b>【你的回答】</b>：'+esc(v)+'<br><b>【修正後回答】</b>：'+esc(fixed)+'<br>'+
+    '<b>【老師的分析與建議】</b>：'+advice+'<br>'+
+    '<span class="note">（自動修復已幫你校正大小寫、常見縮寫撇號與句尾標點；關鍵字覆蓋率約 '+Math.round(cov*100)+'%）</span><br>'+
+    '<b>【獲得分數】</b>：'+score+'／4<br><br>'+
+    '同學，你願意動筆就非常棒了！老師看得出你在思考句型，這就是進步最快的方式。按下【✅ Check Answers】對照參考解答，再改一次，你一定會更接近滿分！加油，成就努力自信的自己！💪🌟</div>';
+}
+function transCard(root,idx,item,badge){
+  var st={locked:false};
+  var c=el('div','card'); c.appendChild(el('div','num',badge||String(idx+1)));
+  c.appendChild(el('div','zh','📝 '+item.zh));
+  var ta=el('textarea','ta'); ta.setAttribute('placeholder','Write your English translation here...');
+  c.appendChild(ta);
+  var aiout=el('div','reveal aiout'), rv=makeReveal();
+  rv.innerHTML='<div class="ansline">📖 參考解答：'+esc(item.ref)+'</div>'+(item.note?'<div class="expl"><b>【句型 / 單字片語 / 文法時態說明】</b><br>'+item.note+'</div>':'');
+
+  var ai=el('button','btn ai','🤖 送出給 AI 老師批改');
+  ai.onclick=function(){callAI().catch(function(){aiGrade(ta.value,item,c,st);});};
+  var chk=el('button','btn chk','✅ Check Answers');
+  chk.onclick=function(){rv.classList.add('on');};
+  c.appendChild(ai); c.appendChild(chk); c.appendChild(revealBtn(rv));
+  c.appendChild(aiout); c.appendChild(rv);
+  root.appendChild(c);
+}
+/* ============================================================
+   頁籤四：📚 連貫式翻譯實戰
+   ============================================================ */
+function buildTrans(){
+  var root=document.getElementById('p-trans');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '📚 <b>Translation Practice 連貫式翻譯實戰</b><br>'+
+    '全部練習與填空<b>都不給提示</b>；寫完按下【✅ Check Answers】才會顯示正確答案與說明。<br>'+
+    '自由翻譯題請按【🤖 送出給 AI 老師批改】，AI 老師會依大考中心評分標準給你溫暖又具體的回饋。'));
+
+  root.appendChild(secTitle('一、文法選擇（'+GRAMMAR.length+' 題）'));
+  root.appendChild(el('div','intro','👉 四選一採按壓式互動：直接按壓選項內容作答；全部選完後按下方「✅ Check Answers」一次批改，答案與詳解會出現在<b>各題正下方</b>。'));
+  var gStates=[];
+  GRAMMAR.forEach(function(g,i){
+    var st={locked:false,sel:-1};
+    var c=el('div','card'); c.appendChild(el('div','num',String(i+1)));
+    c.appendChild(el('div','qen',esc(g.q)));
+    var box=el('div','mc'),btns=[];
+    g.o.forEach(function(o,k){
+      var b=el('button','mcopt','('+'ABCD'[k]+') '+esc(o));
+      b.onclick=function(){btns.forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');st.sel=k;};
+      btns.push(b);box.appendChild(b);
+    });
+    c.appendChild(box);
+    var fb=fbBox(),rv=makeReveal();
+    rv.innerHTML='<div class="ansline">📖 參考解答：('+'ABCD'[g.k]+') '+esc(g.o[g.k])+'</div><div class="expl"><b>【答案與詳解】</b><br>'+g.e+'</div>';
+    c.appendChild(revealBtn(rv));
+
+    c.appendChild(fb); c.appendChild(rv); root.appendChild(c);
+    gStates.push({st:st,btns:btns,fb:fb,rv:rv,g:g});
+  });
+  var gAll=el('button','btn chk','✅ Check Answers（一次批改全部）'); gAll.style.fontSize='16px';
+  gAll.onclick=function(){
+    var right=0,answered=0;
+    gStates.forEach(function(x){
+      if(x.st.sel<0)return; answered++;
+      var ok=x.st.sel===x.g.k;
+      x.btns.forEach(function(b,i){b.classList.remove('sel');if(i===x.g.k)b.classList.add('ok');else if(i===x.st.sel)b.classList.add('no');});
+      grade(x.st,ok,x.fb,'✅ 正確！ +200 分','🍬 這題錯了，−50 分。');
+      x.rv.classList.add('on'); if(ok)right++;
+    });
+    if(!answered){toast('請先作答再批改喔！',false);return;}
+    toast('批改完成：答對 '+right+' / '+answered+' 題',right===answered);
+  };
+  root.appendChild(gAll);
+
+  root.appendChild(secTitle('二、引導式翻譯（'+GUIDED.length+' 題）'));
+  root.appendChild(el('div','intro','👉 填入正確的搭配詞；寫完按【✅ 檢查】批改，按【📖 參考解答】看說明。'));
+  GUIDED.forEach(function(item,i){
+    var st={locked:false},inputs=[];
+    var c=el('div','card'); c.appendChild(el('div','num',String(i+1)));
+    c.appendChild(el('div','zh','📝 '+item.zh));
+    var line=el('div','qen'); var segs=item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){var ip=el('input','blank w1');ip.type='text';
+        ip.setAttribute('autocapitalize','off');ip.setAttribute('autocomplete','off');
+        inputs.push(ip);line.appendChild(ip);}
+    });
+    c.appendChild(line);
+    var fb=fbBox(),rv=makeReveal();
+    var full=buildBlankSentence(item.en,function(n){return item.a[n-1];});
+    rv.innerHTML='<div class="ansline">📖 參考解答：<b>'+item.a.join('；')+'</b></div><div class="expl">'+esc(full)+'</div>'+
+                 '<div class="expl"><b>【句型 / 單字片語 / 文法時態說明】</b><br>'+item.note+'</div>';
+
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){var ok=true;
+      inputs.forEach(function(ip,k){var g=eqWord(ip.value,item.a[k]);ip.className='blank w1 '+(g?'ok':'no');if(!g)ok=false;});
+      grade(st,ok,fb,'✅ 完全正確！ +200 分','🍬 搭配詞還沒完全對，−50 分。');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('三、課文摘要翻譯（'+SUMMARY.length+' 題）'));
+  SUMMARY.forEach(function(it,i){transCard(root,i,it);});
+
+  root.appendChild(secTitle('四、連貫式翻譯（'+COHERENT.length+' 題・句型 1-1／1-2／2-1／2-2）'));
+  COHERENT.forEach(function(it,i){transCard(root,i,it,it.tag);});
+}
+/* ============================================================
+   頁籤五：🌊 Cause-and-Effect Relationship 寫作專區
+   ============================================================ */
+var CAUSE_SKEL="The Morning After the Firecrackers. "+
+"Every Lunar New Year, families all over Taiwan set off fireworks and firecrackers at midnight. "+
+"{1}, the streets look completely different the next morning. "+
+"{2} thousands of firecrackers are lit on the same night, red paper is scattered across the sidewalks, and sanitation workers must sweep for hours. "+
+"The thick smoke {3} a pungent smell {4} the whole neighborhood looks hazy even after sunrise. "+
+"The deafening bangs startle pets and stray dogs, {5} many of them hide under parked cars. "+
+"Worse still, piles of debris block the entrances of small stores, {6} affecting their business. "+
+"{7} these problems, I believe this custom is a double-edged sword. "+
+"{8} the loud noise, the festive atmosphere becomes real to me, and my grandmother says it wards off evil spirits. "+
+"{9}, {10} we ignore the pollution, {11} the cost will outweigh the joy. "+
+"{12}, my family now chooses electronic firecrackers {13} keep the tradition without harming the air.";
+function buildCause(){
+  var root=document.getElementById('p-cause');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🌊 <b>Cause-and-Effect Relationship 因果關係的寫作</b><br>'+
+    '先完成填空式範文，再逐一挑戰四個 Word Bank 單元，最後看老師的總複習三件事。<br>'+
+    '📌 每個單元按壓「✅ Check answers」即可進入互動學習總分之累計。'));
+
+  var pr=el('div','card blue');
+  pr.appendChild(el('div','sub-title','📝 寫作題目 Writing Prompt'));
+  pr.appendChild(el('div','qen','<b>說明：</b>依提示寫一篇英文作文，文長至少 120 個單詞（words）。<br><b>提示：</b>過年放煙火、鞭炮是台灣很多人經歷過的儀式與活動。請針對這個議題寫一篇英文作文，文分兩段。第一段根據下方圖片，描述放煙火、鞭炮後，可能出現的狀況；第二段說明你對放煙火或鞭炮的看法與經驗。'));
+  root.appendChild(pr);
+
+  /* PART A：填空式範文（兩段分開作答，各自擁有獨立可上下滑動的 Word Bank） */
+  root.appendChild(secTitle('PART A｜填空式範文 Cloze Essay'));
+  root.appendChild(el('div','intro',
+    '👉 範文分成 <b>第一段</b> 與 <b>第二段</b> 兩個<b>各自獨立</b>的作答欄位，每段上方都有自己的 Word Bank（可上下滑動、可收合）。<br>'+
+    '先按壓 Word Bank 裡的詞（變粉色＝選取），再按壓該段文章中的空格填入；填進去之後，該詞在 Word Bank 就會消失，只留下 🔊 發音鍵。若選錯了，再按壓一次空格裡的詞，它就會回到 Word Bank 原來的位置。每段各有 3 個誘答項：For example、In addition、Although。'));
+
+  var PARA_A = [
+   {no:1, title:'第一段｜放鞭炮後的隔天早上（第 1 至 6 格）',
+    from:0, to:6,
+    pieces:[
+     '<b>The Morning After the Firecrackers</b><br>&emsp;Every Lunar New Year, families all over Taiwan <b>set off</b> fireworks and firecrackers at midnight. ',
+     ', the streets look completely different the next morning. ',
+     ' thousands of firecrackers are lit on the same night, red paper is scattered across the sidewalks, and sanitation workers must sweep for hours. The thick smoke ',
+     ' a pungent smell ',
+     ' the whole neighborhood looks hazy even after sunrise. The deafening bangs <b>startle</b> pets and stray dogs, ',
+     ' many of them hide under parked cars. Worse still, piles of debris block the entrances of small <b>stores</b>, ',
+     ' <b>affecting their business</b>.'
+    ],
+    skel:'The Morning After the Firecrackers. Every Lunar New Year, families all over Taiwan set off fireworks and firecrackers at midnight. {1}, the streets look completely different the next morning. {2} thousands of firecrackers are lit on the same night, red paper is scattered across the sidewalks, and sanitation workers must sweep for hours. The thick smoke {3} a pungent smell {4} the whole neighborhood looks hazy even after sunrise. The deafening bangs startle pets and stray dogs, {5} many of them hide under parked cars. Worse still, piles of debris block the entrances of small stores, {6} affecting their business.'},
+   {no:2, title:'第二段｜我對放鞭炮的看法與經驗（第 7 至 13 格）',
+    from:6, to:13,
+    pieces:[
+     '&emsp;',
+     ' these problems, I believe this custom is <b>a double-edged sword</b>. ',
+     ' the loud noise, the festive atmosphere becomes real to me, and my grandmother says it <b>wards off</b> evil spirits. ',
+     ', ',
+     ' we ignore the pollution, ',
+     ' the cost will <b>outweigh</b> the joy. ',
+     ', my family now chooses electronic firecrackers ',
+     ' keep the tradition without harming the air.'
+    ],
+    skel:'{7} these problems, I believe this custom is a double-edged sword. {8} the loud noise, the festive atmosphere becomes real to me, and my grandmother says it wards off evil spirits. {9}, {10} we ignore the pollution, {11} the cost will outweigh the joy. {12}, my family now chooses electronic firecrackers {13} keep the tradition without harming the air.'}
+  ];
+
+  PARA_A.forEach(function(P){
+    var c=el('div','card');
+    c.appendChild(el('div','num', String(P.no)));
+    c.appendChild(el('div','sub-title', P.title));
+    /* 獨立 Word Bank 面板：與範文分屬不同欄位，內部自行捲動 */
+    var wb=el('div','wbpanel');
+    var wbhead=el('div','wbhead','🧰 第 '+P.no+' 段 Word Bank（含 3 個誘答項）');
+    var wbtog=el('button','btn mini','▾ 收合');
+    wbtog.onclick=function(){wb.classList.toggle('mini');wbtog.textContent=wb.classList.contains('mini')?'▸ 展開':'▾ 收合';};
+    wbhead.appendChild(wbtog); wb.appendChild(wbhead);
+    var bank=el('div','wbscroll'); var selW=null, chips={};
+    var myWords=CAUSE_ESSAY.slice(P.from,P.to).map(function(x){return x[0];}).concat(CAUSE_DISTRACTORS);
+    function clearSel(){Object.keys(chips).forEach(function(k){chips[k].classList.remove('sel');});selW=null;}
+    function takeWord(w){ if(chips[w]){chips[w].classList.add('taken');} }
+    function returnWord(w){ if(chips[w]){chips[w].classList.remove('taken');chips[w].classList.remove('sel');} }
+    shuffle(myWords).forEach(function(w){
+      var holder=el('span','wchip');
+      var lab=el('button','wlab',esc(w));
+      lab.onclick=function(){
+        if(holder.classList.contains('taken'))return;
+        if(selW===w){clearSel();return;}
+        clearSel(); selW=w; holder.classList.add('sel');
+      };
+      var spk=el('button','wspk','🔊');
+      spk.onclick=function(ev){ ev.stopPropagation(); say(w); };
+      holder.appendChild(lab); holder.appendChild(spk);
+      chips[w]=holder; bank.appendChild(holder);
+    });
+    wb.appendChild(bank); c.appendChild(wb);
+    /* 範文作答區：與 Word Bank 分開的獨立欄位 */
+    var essay=el('div','essay'); essay.style.marginTop='12px';
+    var blanks=[];
+    P.pieces.forEach(function(seg,i){
+      essay.appendChild(el('span','',seg));
+      if(i<P.pieces.length-1){
+        var qi=P.from+i;
+        essay.appendChild(el('span','qn',String(qi+1)));
+        var bl=el('span','eblank',''); bl.dataset.a=CAUSE_ESSAY[qi][0];
+        bl.onclick=function(){
+          if(bl.textContent.trim()){ returnWord(bl.textContent.trim()); bl.textContent=''; bl.className='eblank'; return; }
+          if(!selW)return;
+          bl.textContent=selW; bl.className='eblank'; takeWord(selW); clearSel();
+        };
+        blanks.push(bl); essay.appendChild(bl);
+      }
+    });
+    c.appendChild(essay);
+    var fb=fbBox(), rv=makeReveal();
+    var tb='<table class="cmp"><tr><th>題號</th><th>答案</th><th>為什麼只能填這個</th></tr>'+
+      CAUSE_ESSAY.slice(P.from,P.to).map(function(x,i){return '<tr><td>'+(P.from+i+1)+'</td><td><b>'+x[0]+'</b></td><td>'+x[1]+'</td></tr>';}).join('')+'</table>';
+    rv.innerHTML='<div class="ansline">📖 參考解答（第 '+P.no+' 段，依題號）</div>'+tb+
+      '<div class="expl"><b>誘答項：</b>For example（舉例）、In addition（並列）、Although（讓步）——皆非因果連結。</div>'+
+      '<div class="expl">⚠ 三大扣分點：① due to + 子句　② 逗號 + therefore　③ result in／result from 方向顛倒。</div>';
+    var st={locked:false};
+    var chk=el('button','btn chk','✅ Check answers（本段）');
+    chk.onclick=function(){
+      var n=0,miss=[];
+      blanks.forEach(function(b,i){
+        var v=b.textContent.trim();
+        if(!v){miss.push(P.from+i+1);b.className='eblank';return;}
+        if(v===b.dataset.a){b.className='eblank ok';n++;}else{b.className='eblank no';miss.push(P.from+i+1);}
+      });
+      grade(st,n===blanks.length,fb,'✅ 第 '+P.no+' 段 '+blanks.length+' 格全對！ +200 分',
+        '🍬 答對 '+n+' / '+blanks.length+'　｜需再確認的題號：'+miss.join(', ')+'　−50 分。');
+      rv.classList.add('on');
+    };
+    var rd=el('button','btn say','🔊');
+    rd.onclick=function(){var t=P.skel;CAUSE_ESSAY.forEach(function(x,i){t=t.replace('{'+(i+1)+'}',x[0]);});say(t);};
+    var rdm=el('button','btn say','🎧');
+    rdm.onclick=function(){var t=P.skel;blanks.forEach(function(b,i){t=t.replace('{'+(P.from+i+1)+'}',b.textContent.trim()||'blank');});say(t);};
+    var rs=el('button','btn','↺ 重做本段');
+    rs.onclick=function(){blanks.forEach(function(b){ if(b.textContent.trim()) returnWord(b.textContent.trim()); b.textContent='';b.className='eblank';});
+      clearSel(); fb.className='fb'; rv.classList.remove('on');};
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(rd); c.appendChild(rdm); c.appendChild(rs);
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  /* ①~④ Word Bank 單元 */
+  Object.keys(CAUSE_UNITS).forEach(function(key){
+    var u=CAUSE_UNITS[key];
+    root.appendChild(secTitle(u.title.replace(' Word Bank','')));
+    var c=el('div','card');
+    if(key==='4')c.appendChild(el('div','note','本區含【基礎】與【進階】搭配詞，請依中譯與括號內的<b>詞性／結構提示</b>判斷。'));
+    c.appendChild(el('div','note','👉 先按壓下方 Word Bank 的詞，再按壓題目右側空格填入；按壓已填入的空格可退回詞庫。'+(u.tts?'每個詞旁的 🔊 可以按壓聽發音。':'')));
+    var ubank=el('div','pillrow'); var usel=null, uchips={};
+    shuffle(u.items.map(function(x){return x[1];})).forEach(function(w){
+      var holder=el('span','pill'); holder.style.padding='0';
+      var b=el('button','chip',w); uchips[w]=b;
+      b.onclick=function(){
+        if(usel===w){usel=null;b.classList.remove('sel');return;}
+        Object.keys(uchips).forEach(function(k){uchips[k].classList.remove('sel');});
+        usel=w;b.classList.add('sel');
+      };
+      ubank.appendChild(b);
+      if(u.tts){var s=el('button','btn say','🔊');s.style.padding='4px 8px';s.onclick=function(){say(w);};ubank.appendChild(s);}
+    });
+    c.appendChild(ubank);
+    var rows=[];
+    u.items.forEach(function(it,i){
+      var row=el('div','row');
+      row.appendChild(el('span','zhx','<span class="qn">'+(i+1)+'</span>'+it[0]));
+      var bl=el('span','eblank',''); bl.dataset.a=it[1];
+      bl.onclick=function(){
+        if(bl.textContent.trim()){uchips[bl.textContent.trim()].classList.remove('used');bl.textContent='';bl.className='eblank';return;}
+        if(!usel)return;
+        bl.textContent=usel; bl.className='eblank'; uchips[usel].classList.add('used'); usel=null;
+      };
+      rows.push(bl); row.appendChild(bl); c.appendChild(row);
+    });
+    var fb=fbBox(), rv=makeReveal(), st={locked:false};
+    rv.innerHTML='<div class="ansline">📖 參考解答：'+u.items.map(function(x,i){return (i+1)+'. '+x[1];}).join('　')+'</div>'+
+                 '<div class="expl"><b>【解析（依題號）】</b><br>'+u.expl+'</div>';
+    var chk=el('button','btn chk','✅ Check answers');
+    chk.onclick=function(){
+      var n=0,miss=[];
+      rows.forEach(function(b,i){
+        var v=b.textContent.trim();
+        if(!v){miss.push(i+1);return;}
+        if(v===b.dataset.a){b.className='eblank ok';n++;}else{b.className='eblank no';miss.push(i+1);}
+      });
+      grade(st,n===rows.length,fb,'✅ 全部正確！ +200 分','🍬 答對 '+n+' / '+rows.length+'　｜需再確認的題號：'+miss.join(', ')+'　−50 分。');
+      rv.classList.add('on');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  /* 總複習 */
+  root.appendChild(secTitle('🎤 最後三分鐘：因果寫作總複習'));
+  var coach=el('div','card');
+  coach.innerHTML=
+   '<p>🎤 <b>同學，先深呼吸一下。</b>因果關係的作文，你們最常做的一件事叫做「because 一路撐到底」——第一段 because，第二段 because，結論再一個 because。今天講完這三件事，你就跟全班拉開差距。</p>'+
+   '<div class="sub-title">第一件事：因果不是「詞」，是「六個位置」</div>'+
+   '<p>👉 後面接<b>完整句子</b>的，用 <b>because / since / as</b>（① 連接詞）<br>'+
+   '👉 後面接<b>名詞</b>的，用 <b>because of / due to / owing to / thanks to</b>（② 介系詞片語）<br>'+
+   '👉 <b>另起一句</b>才用 <b>Therefore, / Consequently, / As a result,</b>（③ 副詞連接語）<br>'+
+   '👉 把因果<b>做成動詞</b>：<b>lead to / result in / give rise to / trigger</b>（④）<br>'+
+   '👉 再高一階，<b>做成名詞</b>：<b>the impact of A on B</b>（⑤）<br>'+
+   '👉 收尾殺招，<b>分詞構句</b>：<b>..., thus affecting their business.</b>（⑥）</p>'+
+   '<p>寫作文時，六類至少換三類用，句型立刻立體。同一類連用兩次，就是單調。</p>'+
+   '<div class="sub-title">第二件事：三個「一寫就扣分」的地雷</div>'+
+   '<p>💣 <b>地雷一：due to 後面接句子。</b>「✗ Due to it rained, ...」——due to 是介系詞，後面只能放名詞。要接句子請改 <b>Because it rained</b>。</p>'+
+   '<p>💣 <b>地雷二：逗號 + therefore。</b>「✗ It was noisy, therefore I couldn\u2019t sleep.」——這叫 <b>comma splice</b>。therefore 前面要<b>句號或分號</b>，不然就換成 <b>so</b>。</p>'+
+   '<p>💣 <b>地雷三：result in 跟 result from 搞反。</b><b>from 是「來源」→ 後面放「因」；in 是「導入」→ 後面放「果」</b>。<br>'+
+   '✓ Smoke <b>results in</b> poor visibility.（煙 → 能見度差）<br>✓ Poor visibility <b>results from</b> smoke.（能見度差 ← 煙）</p>'+
+   '<div class="sub-title">第三件事：閱卷老師真正在找的，是「邏輯鏈」</div>'+
+   '<p>高分作文的差別不在單字多難，而在<b>因果有沒有跳格</b>。補上中間的機制就對了：</p>'+
+   '<p>🔗 Firecrackers are lit → <b>the air becomes filled with airborne particles</b> → elderly people with asthma stay indoors.</p>'+
+   '<p>還有一個進階的：<b>不要把「相關」寫成「因果」</b>。想穩，就學會用 <b>hedging</b>：<b>may result from / can be attributed to / contribute to / does not necessarily mean</b>。</p>'+
+   '<div class="sub-title">今晚就背這一組（因果精選 10 個）</div>'+
+   '<table class="cmp"><tr><th>片語</th><th>中文</th></tr>'+
+   [['give rise to','引發'],['stem from','源自'],['trigger a chain reaction','引發連鎖反應'],['contribute to','是原因之一'],
+    ['be attributed to','被歸因於'],['pose a threat to','構成威脅'],['have an impact on','造成影響'],['outweigh','勝過'],
+    ['a double-edged sword','雙面刃'],['strike a balance between','取得平衡']].map(function(x){return '<tr><td><b>'+x[0]+'</b></td><td>'+x[1]+'</td></tr>';}).join('')+
+   '</table>'+
+   '<p>最後一句話：<b>because 是及格線，六類輪替是高分線，補齊邏輯鏈＋hedging 是頂標線。</b>下次寫因果題，先問自己一句——我這篇裡面，有幾類因果結構？我們下次見。👋</p>'+
+   '<table class="cmp"><tr><th>類別</th><th>常見詞</th><th>後接</th></tr>'+
+   '<tr><td>① 連接詞</td><td>because / since / as / so that</td><td>完整子句</td></tr>'+
+   '<tr><td>② 介系詞片語</td><td>because of / due to / owing to / thanks to</td><td>名詞或動名詞</td></tr>'+
+   '<tr><td>③ 副詞連接語</td><td>as a result, / therefore, / consequently,</td><td>前須句號或分號</td></tr>'+
+   '<tr><td>④ 動詞化因果</td><td>cause / lead to / result in / give rise to<br>result from / stem from</td><td>in＝接<b>果</b>；from＝接<b>因</b></td></tr>'+
+   '<tr><td>⑤ 名詞化因果</td><td>the impact of A on B / the consequence of</td><td>名詞（學術英文）</td></tr>'+
+   '<tr><td>⑥ 分詞構句</td><td>, thus / thereby ＋ V-ing</td><td>動名詞</td></tr></table>';
+  root.appendChild(coach);
+}
+/* ============================================================
+   ☰ 浮動選單 / 頁籤切換 / 計分列顯示
+   ============================================================ */
+var TABS=[
+ {id:'p-fill', label:'💡 例句填空'},
+ {id:'p-hunt', label:'🗺️ 課文尋寶闖關'},
+ {id:'p-mixed',label:'🧩 混合題 & 篇章結構'},
+ {id:'p-trans',label:'📚 連貫式翻譯實戰'},
+ {id:'p-cause',label:'🌊 Cause-and-Effect Relationship 寫作專區'}
+];
+function setupMenu(){
+  var btn=document.getElementById('menuBtn'), panel=document.getElementById('menuPanel'), bar=document.getElementById('topbar');
+  function place(){panel.style.top=(bar.offsetHeight+6)+'px';}
+  place(); window.addEventListener('resize',place);
+  function open(){panel.classList.add('on');btn.textContent='✕ 關閉';place();}
+  function close(){panel.classList.remove('on');btn.textContent='☰ 選單';}
+  btn.onclick=function(e){e.stopPropagation();panel.classList.contains('on')?close():open();};
+  document.addEventListener('click',function(e){
+    if(!panel.classList.contains('on'))return;
+    if(panel.contains(e.target)||e.target===btn)return;
+    close();
+  });
+  var btns=[];
+  panel.appendChild(el('div','note','📑 頁籤（選好後自動收合）'));
+  TABS.forEach(function(t){
+    var b=el('button','tabbtn',t.label);
+    b.onclick=function(){
+      btns.forEach(function(x){x.classList.remove('on');}); b.classList.add('on');
+      TABS.forEach(function(tt){document.getElementById(tt.id).classList.remove('on');});
+      document.getElementById(t.id).classList.add('on');
+      close(); window.scrollTo({top:0,behavior:'smooth'});
+    };
+    btns.push(b); panel.appendChild(b);
+  });
+  var badge=document.getElementById('scoreBadge');
+  var sb=el('button','tabbtn','🏆 顯示／隱藏計分列');
+  sb.onclick=function(){badge.classList.toggle('show');close();};
+  panel.appendChild(el('div','note','🏆 計分列（預設隱藏）'));
+  panel.appendChild(sb);
+  btns[0].classList.add('on'); document.getElementById(TABS[0].id).classList.add('on');
+  /* 捲動超過 150px 自動收起選單，作答區不被遮住 */
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>150&&panel.classList.contains('on'))close();
+  },{passive:true});
+  /* 手機鍵盤彈出時（輸入中）暫時隱藏計分列 */
+  document.addEventListener('focusin',function(e){
+    if(e.target&&(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')){badge.style.visibility='hidden';}
+  });
+  document.addEventListener('focusout',function(){badge.style.visibility='visible';});
+}
+
+/* ===== 繳交區：複製本輪練習 / 列印 / 上傳 Google Classroom 步驟 ===== */
+function copyText(str, fallbackHost){
+  var done=false;
+  try{ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(str);done=true;} }catch(e){}
+  if(!done){
+    try{
+      var ta=document.createElement('textarea'); ta.value=str; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0,str.length);
+      done=document.execCommand('copy'); document.body.removeChild(ta);
+    }catch(e){ done=false; }
+  }
+  if(done){ toast('已複製本輪練習紀錄，可直接貼到 Google Classroom 留言區！', true); return; }
+  if(fallbackHost){
+    var box=fallbackHost.querySelector('.copyfall');
+    if(!box){ box=el('textarea','ta copyfall'); box.style.minHeight='160px'; fallbackHost.appendChild(box); }
+    box.value=str; box.focus(); box.select(); box.setSelectionRange(0,str.length);
+    toast('內容已自動全選，直接按 Ctrl+C（Mac 按 ⌘+C）即可複製。', false);
+  }else{ toast('請手動選取複製', false); }
+}
+function downloadText(filename, str){
+  try{
+    var blob=new Blob(['\ufeff'+str],{type:'text/plain;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=url; a.download=filename;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(url); }, 300);
+    toast('已下載練習紀錄檔，可直接上傳 Google Classroom！', true);
+  }catch(e){ toast('此瀏覽器無法直接下載，請改用【📋 複製本輪練習】', false); }
+}
+function downloadWord(filename, title, bodyHtml){
+  try{
+    var html='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">'+
+      '<head><meta charset="utf-8"><title>'+title+'</title>'+
+      '<style>body{font-family:"Microsoft JhengHei","微軟正黑體",sans-serif;line-height:1.9;color:#4A3E3D;font-size:12pt}'+
+      'h2{border-bottom:2px solid #7DD3FC;padding-bottom:6px}pre{white-space:pre-wrap;font-family:inherit}'+
+      '.sig{margin-top:30px;border-top:1px dashed #999;padding-top:10px}</style></head><body>'+bodyHtml+
+      '<div class="sig">班級：____________　座號：____________　姓名：____________　日期：____________</div>'+
+      '</body></html>';
+    var blob=new Blob(['\ufeff'+html],{type:'application/msword'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=url; a.download=filename;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(url); },300);
+    toast('已下載 Word 檔，可直接上傳 Google Classroom 繳交！', true);
+  }catch(e){ toast('此瀏覽器無法直接下載，請改用【👀 預覽本輪紀錄】自行複製', false); }
+}
+function printView(title, html){
+  var w=window.open('','_blank');
+  if(!w){ toast('瀏覽器阻擋了新視窗，請允許彈出視窗', false); return; }
+  w.document.write('<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><title>'+title+
+   '</title><style>body{font-family:"Microsoft JhengHei",sans-serif;padding:24px;line-height:1.9;color:#4A3E3D}'+
+   'h2{border-bottom:3px solid #7DD3FC;padding-bottom:6px}.sig{margin-top:36px;border-top:1px dashed #999;padding-top:12px}</style></head><body>'+
+   '<h2>'+title+'</h2>'+html+
+   '<div class="sig">班級：____________　座號：____________　姓名：____________　日期：____________</div></body></html>');
+  w.document.close();
+  setTimeout(function(){ try{ w.print(); }catch(e){} }, 400);
+}
+function collectAnswers(panel){
+  var lines=[], cards=[].slice.call(panel.querySelectorAll('.card'));
+  cards.forEach(function(c){
+    if(c.querySelector('.sub-title') && /練習成果繳交/.test(c.querySelector('.sub-title').textContent)) return;
+    var num=c.querySelector('.num')?c.querySelector('.num').textContent.trim():'';
+    var parts=[];
+    [].slice.call(c.querySelectorAll('input.blank')).forEach(function(ip){ if(ip.value.trim())parts.push(ip.value.trim()); });
+    [].slice.call(c.querySelectorAll('.eblank')).forEach(function(b){ if(b.textContent.trim())parts.push(b.textContent.trim()); });
+    [].slice.call(c.querySelectorAll('select.blank')).forEach(function(se){ if(se.value>-1&&se.selectedIndex>0)parts.push(se.options[se.selectedIndex].text.trim()); });
+    [].slice.call(c.querySelectorAll('textarea.ta')).forEach(function(t){ if(t.value.trim())parts.push(t.value.trim()); });
+    var picked=c.querySelector('.mcopt.sel')||c.querySelector('.mcopt.ok');
+    if(picked) parts.push(picked.textContent.trim());
+    [].slice.call(c.querySelectorAll('.slot.filled')).forEach(function(sl){ parts.push(sl.textContent.replace(/\s+/g,' ').trim()); });
+    var fbn=c.querySelector('.fb.on');
+    var res=fbn?('　→ '+fbn.textContent.replace(/\s+/g,' ').trim()):'';
+    if(parts.length) lines.push((num?('['+num+'] '):'')+parts.join('｜')+res);
+  });
+  return lines.length?lines.join('\n'):'（本頁尚未作答，請先完成練習再複製或列印。）';
+}
+function submitHeader(label){
+  return label+'\n姓名：____________　班級：____________　座號：____________\n'+
+    '🏆 累計總分：'+TOTAL+' 分　｜　本輪得分：'+ROUND+' / 2000\n'+
+    '完成時間：'+new Date().toLocaleString()+'\n------------------------------\n';
+}
+function submitBlock(root, label){
+  var c=el('div','card');
+  c.appendChild(el('div','sub-title','📤 練習成果繳交 Google Classroom'));
+  c.appendChild(el('div','qen',
+    '完成本輪練習，確認畫面有顯示 🏆 累計總分與本輪得分（可從 ☰ 選單開啟計分列）。<br>'+
+    '依上表快捷鍵截圖。<br>'+
+    '打開 Google Classroom 對應課程。<br>'+
+    '進入本次作業，點選【新增或建立】→【檔案】。<br>'+
+    '上傳截圖，檔名格式：班級_座號_姓名_L1_第○輪。<br>'+
+    '按【繳交】並在留言區貼上你的練習紀錄。<br>'+
+    '<b>按【📥 下載本輪紀錄（Word 檔）】即可直接取得 Word 檔案，不需再轉檔，可直接上傳繳交。</b>'));
+  var pre=el('div','note','按下【📥 下載本輪紀錄（Word 檔）】前，請先確認題目已作答；檔案會即時帶出你填寫的答案、每題批改結果與得分。');
+  c.appendChild(pre);
+  var b4=el('button','btn chk','📥 下載本輪紀錄（Word 檔）');
+  b4.onclick=function(){
+    var safe=label.replace(/[^\u4e00-\u9fa5A-Za-z0-9]/g,'');
+    downloadWord('練習紀錄_'+safe+'.doc', label,
+      '<h2>'+label+'　練習紀錄</h2>'+
+      '<p>姓名：____________　班級：____________　座號：____________</p>'+
+      '<p>🏆 累計總分：<b>'+TOTAL+'</b> 分　｜　本輪得分：<b>'+ROUND+'</b> / 2000<br>完成時間：'+new Date().toLocaleString()+'</p>'+
+      '<h3>我的作答紀錄</h3><pre>'+esc(collectAnswers(root))+'</pre>'+
+      '<h3>繳交步驟</h3><p>完成本輪練習，確認畫面有顯示 🏆 累計總分與本輪得分（可從 ☰ 選單開啟計分列）。<br>'+
+      '依上表快捷鍵截圖。<br>打開 Google Classroom 對應課程。<br>進入本次作業，點選【新增或建立】→【檔案】。<br>'+
+      '上傳截圖或本檔案，檔名格式：班級_座號_姓名_L1_第○輪。<br>按【繳交】並在留言區貼上你的練習紀錄。</p>');
+  };
+  var b3=el('button','btn','👀 預覽本輪紀錄');
+  var box=el('div','reveal');
+  b3.onclick=function(){ box.classList.add('on');
+    box.innerHTML='<div class="ansline">👀 本輪作答紀錄預覽</div><div class="expl" style="white-space:pre-wrap">'+
+      esc(submitHeader(label)+collectAnswers(root))+'</div>'; };
+  c.appendChild(b4); c.appendChild(b3); c.appendChild(box);
+  root.appendChild(c);
+}
+function collapseNotices(){
+  var nodes=[].slice.call(document.querySelectorAll('.panel .rulebar, .panel .intro'));
+  nodes.forEach(function(nd){
+    if(nd.dataset.collapsed)return;
+    nd.dataset.collapsed='1';
+    var isRule=nd.classList.contains('rulebar');
+    var label=isRule?'⚖️ 計分規則':'💡 本頁說明';
+    var btn=el('button','btn mini',label+'（按一下展開）');
+    btn.style.margin='6px 6px 0 0';
+    nd.style.display='none';
+    nd.parentNode.insertBefore(btn,nd);
+    btn.onclick=function(){
+      var on=nd.style.display==='none';
+      nd.style.display=on?'block':'none';
+      btn.textContent=label+(on?'（按一下隱藏）':'（按一下展開）');
+    };
+  });
+}
+try{
+  setupMenu(); buildFill(); buildHunt(); buildMixed(); buildTrans(); buildCause();
+  submitBlock(document.getElementById('p-fill'),'💡 例句填空');
+  submitBlock(document.getElementById('p-hunt'),'🗺️ 課文尋寶闖關');
+  submitBlock(document.getElementById('p-mixed'),'🧩 混合題 & 篇章結構');
+  submitBlock(document.getElementById('p-trans'),'📚 連貫式翻譯實戰');
+  collapseNotices();
+}catch(err){
+  var m=document.querySelector('main');
+  if(m){m.insertAdjacentHTML('afterbegin','<div class="rulebar">⚠️ 載入時發生問題：'+String(err&&err.message||err)+'</div>');}
+}
+
+</script>
+</body>
+</html>
